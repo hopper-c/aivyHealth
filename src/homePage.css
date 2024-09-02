@@ -1,0 +1,820 @@
+button {
+    border: none;
+  }
+  
+  .flexRow {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .preLaunchHomePage {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  
+  .rightContainer {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+  }
+  
+  .header {
+    background-color: #f5f5ed;
+    padding: 0;
+    font: 500 16px/2 Poppins, sans-serif;
+  }
+  
+  .topMenu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 25px;
+    height: 46px;
+    padding: 22px 33px 22px 33px;
+  }
+  
+  .login {
+    color: #09051c;
+    font-family: Inter, sans-serif;
+  }
+  
+  .joinButton,
+  .appointmentButton {
+    border-radius: 22px;
+    padding: 9px 19px;
+    color: #fff;
+    height: 100%;
+    font-size: 16px;
+    background-color: #2f7089;
+  }
+  
+  .appointmentButton {
+    background-color: #fff;
+    color: #09051c;
+    border: 1px solid #09051c;
+  }
+  
+  .mainNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    padding: 0 43px 22px 43px;
+  }
+  
+  .navList {
+    display: flex;
+    gap: 25px;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .navLink {
+    color: #09051c;
+    text-decoration: none;
+  }
+  
+  .logo {
+    max-width: 180px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .searchForm {
+    display: flex;
+    align-items: center;
+  }
+  
+  .searchInput {
+    border-radius: 16px;
+    background-color: #71b4c3;
+    padding: 13px 16px;
+    color: #2f7089;
+    border: none;
+  }
+  
+  .searchButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .profileIcon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  .introSection {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 43px 70px;
+    justify-content: center;
+  }
+  
+  .introContent {
+    max-width: 585px;
+  }
+  
+  .introTitle {
+    color: #191720;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 65px;
+  }
+  
+  .introDescription {
+    color: #191720;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 11px;
+  }
+  
+  .introCta {
+    display: flex;
+    gap: 22px;
+    margin-top: 62px;
+  }
+  
+  .treatmentButton,
+  .coverageButton {
+    border-radius: 22px;
+    padding: 9px 50px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .treatmentButton {
+    background-color: #2f7089;
+    color: #fff;
+  }
+  
+  .coverageButton {
+    border: 1px solid #09051c;
+    color: #2f7089;
+  }
+  
+  .introImage {
+    max-width: 570px;
+    border-radius: 22px;
+  }
+  
+  .caseStudySection {
+    background-color: #f5f5ed;
+    padding: 110px 70px;
+    display: flex;
+    gap: 112px;
+  }
+  
+  .caseStudy {
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: 1px 1px 29px rgba(0, 0, 0, 0.03);
+    padding: 26px 29px;
+    margin-bottom: 82px;
+  }
+  
+  .caseStudyTitle {
+    color: #2f7089;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .caseStudyComplaint,
+  .interventionsList,
+  .caseStudyOutcome {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  
+  .interventionsList {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .interventionItem {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 17px;
+    text-align: left;
+  }
+  
+  .interventionIcon {
+    width: 25px;
+    height: 25px;
+  }
+  
+  .divider {
+    width: 100%;
+    margin: 17px 0;
+  }
+  
+  .howItWorks {
+    max-width: 1237px;
+    margin: 0 auto;
+  }
+  
+  .howItWorksTitle {
+    color: #191720;
+    font-size: 56px;
+    line-height: 65px;
+  }
+  
+  .howItWorksDescription {
+    color: #191720;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 25px;
+  }
+  
+  .step {
+    margin-top: 25px;
+  }
+  
+  .stepImage {
+    width: 100%;
+  }
+  
+  .stepInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 24px;
+  }
+  
+  .stepTitle {
+    color: #2f7089;
+    font-size: 26px;
+    font-weight: 500;
+  }
+  
+  .stepIcon {
+    width: 34px;
+  }
+  
+  .waitlistSection {
+    position: relative;
+    padding: 169px 80px;
+    text-align: center;
+  }
+  
+  .waitlistBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .waitlistContent {
+    position: relative;
+    z-index: 1;
+    max-width: 662px;
+    margin: 0 auto;
+  }
+  
+  .waitlistTitle {
+    color: #000;
+    font-size: 56px;
+    font-weight: 500;
+  }
+  
+  .waitlistDescription {
+    color: #000;
+    font-size: 16px;
+    line-height: 2;
+    margin-top: 28px;
+  }
+  
+  .waitlistForm {
+    display: flex;
+    margin-top: 27px;
+    background-color: rgba(242, 242, 242, 0.5);
+    border-radius: 22px;
+    padding: 5px;
+  }
+  
+  .emailInput {
+    flex-grow: 1;
+    border: none;
+    background: transparent;
+    padding: 15px 26px;
+    font-size: 14px;
+  }
+  
+  .submitButton {
+    background-color: #2f7089;
+    color: #fff;
+    border: none;
+    border-radius: 22px;
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .featureHighlights {
+    padding: 82px 70px;
+    background-color: #f5f5ed;
+  }
+  
+  .featureTitle {
+    color: #000;
+    font-size: 56px;
+    font-weight: 500;
+    text-align: center;
+  }
+  
+  .featureDescription {
+    color: #000;
+    font-size: 26px;
+    line-height: 45px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 17px auto 30px;
+  }
+  
+  .featureGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+  
+  .featureCard {
+    background-color: #fff;
+    border-radius: 22px;
+    padding: 20px;
+    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.05);
+    background-image: url('./images/aivy-landing-bg.svg');
+    background-size: 350px;
+  }
+  
+  .featureCardTitle {
+    color: #eeb07f;
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+  
+  .featureCardDescription {
+    color: #000;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .testimonial {
+    text-align: center;
+    padding: 60px 0;
+  }
+  
+  .testimonialQuote {
+    width: 174px;
+    margin-bottom: 30px;
+  }
+  
+  .testimonialText {
+    color: #000;
+    font-size: 36px;
+    line-height: 1.8;
+    max-width: 1000px;
+    margin: 0 auto 20px;
+  }
+  
+  .testimonialAuthor {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  
+  .testimonialImage {
+    width: 242px;
+    border-radius: 50%;
+    overflow: unset;
+  }
+  
+  .treatmentOptions {
+    position: relative;
+    padding: 238px 70px;
+  }
+  
+  .treatmentBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .treatmentGrid {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  
+  .treatmentCard {
+    background-color: #fff;
+    border-radius: 22px;
+    padding: 30px 20px;
+    font-size: 22px;
+    font-weight: 500;
+    text-align: center;
+    height: fit-content;
+    padding: 45px;
+    position: relative;
+  
+    &:global(.card0) {
+      margin-top: 225px;
+    }
+  
+    &:global(.card1) {
+      margin-top: 150px;
+    }
+  
+    &:global(.card2) {
+      margin-top: 75px;
+    }
+  
+    &:global(.card5) {
+      bottom: 46px;
+    }
+  
+    &:global(.card6) {
+      bottom: 148px;
+    }
+  
+    &:global(.card7) {
+      bottom: 198px;
+    }
+  }
+  
+  .callToAction {
+    position: relative;
+    padding: 65px 46px;
+    margin: 70px 70px 0;
+    background-color: #2F7089;
+    text-align: left;
+    background-image: url('./images/smiling_nurse_stock.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-position-x:69%;
+    display: flex;
+    border-radius: 22px;
+    justify-content: space-between;
+  }
+  
+  .ctaBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .ctaContent {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    max-width: 500px;
+  }
+  
+  .ctaSubtitle {
+    color: #eeb07f;
+    font-size: 20px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 11px;
+  }
+  
+  .ctaTitle {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1;
+    margin: 0;
+    margin-bottom: 11px;
+  }
+  
+  .ctaDescription {
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 0;;
+  }
+  
+  .ctaButtons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    width: 250px;
+  }
+  
+  .appointmentButton,
+  .referralButton {
+    padding: 14px 25px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    height: 54px;
+  }
+  
+  .referralButton {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #f5f5ed;
+  }
+  
+  .faqSection {
+    padding: 80px 0;
+  }
+  
+  .faqTitle {
+    color: #000;
+    font-size: 56px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .faqGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
+  .faqItem {
+    background-color: #fff;
+    border-radius: 22px;
+    padding: 20px;
+    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.05);
+  }
+  
+  .faqQuestion {
+    color: #2f7089;
+    font-size: 26px;
+    font-weight: 500;
+    cursor: pointer;
+    padding-right: 30px;
+    position: relative;
+  }
+  
+  .faqQuestion::after {
+    content: "+";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: #2f7089;
+  }
+  
+  .faqItem[open] .faqQuestion::after {
+    content: "-";
+  }
+  
+  .faqAnswer {
+    margin-top: 15px;
+    color: #000;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .contactSection {
+    background-color: #f5f5ed;
+    padding: 80px 80px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .contactInfo {
+    max-width: 500px;
+  }
+  
+  .contactTitle {
+    font-size: 46px;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+  
+  .contactDescription {
+    font-size: 16px;
+    line-height: 2;
+    margin-bottom: 40px;
+  }
+  
+  .contactImage {
+    max-width: 100%;
+  }
+  
+  .contactForm {
+    width: 50%;
+  }
+  
+  .formRow {
+    display: flex;
+    gap: 28px;
+    margin-bottom: 22px;
+  }
+  
+  .formInput,
+  .formTextarea {
+    width: 100%;
+    padding: 20px 18px;
+    border-radius: 18px;
+    border: none;
+    background-color: #fff;
+    font-size: 16px;
+  }
+  
+  .formTextarea {
+    height: 150px;
+    resize: vertical;
+  }
+  
+  .submitButton {
+    background-color: #2f7089;
+    color: #fff;
+    border: none;
+    border-radius: 22px;
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 33px;
+  }
+  
+  .footer {
+    background-color: #71b4c3;
+    padding: 62px 60px;
+    color: #09051c;
+  }
+  
+  .footerContent {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footerMission {
+    max-width: 300px;
+  }
+  
+  .footerLogo {
+    width: 75px;
+    margin-bottom: 20px;
+  }
+  
+  .missionTitle {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 14px;
+  }
+  
+  .missionDescription {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .footerNav {
+    display: flex;
+    gap: 100px;
+  }
+  
+  .footerNavTitle {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 18px;
+  }
+  
+  .footerNavList {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footerNavList li {
+    margin-bottom: 10px;
+  }
+  
+  .footerNavList a {
+    color: #09051c;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .footerBottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 135px;
+    font-size: 16px;
+  }
+  
+  .legalLinks {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .legalLink {
+    color: #09051c;
+    text-decoration: none;
+  }
+  
+  .visuallyHidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+  
+  @media (max-width: 991px) {
+    .header {
+      padding: 22px 20px;
+    }
+  
+    .introSection {
+      flex-direction: column;
+      padding: 43px 20px;
+    }
+  
+    .introTitle {
+      font-size: 40px;
+      line-height: 52px;
+    }
+  
+    .caseStudySection {
+      padding: 60px 20px;
+    }
+  
+    .howItWorksTitle {
+      font-size: 40px;
+      line-height: 52px;
+    }
+  
+    .waitlistSection {
+      padding: 100px 20px;
+    }
+  
+    .featureHighlights {
+      padding: 60px 20px;
+    }
+  
+    .treatmentOptions {
+      padding: 100px 20px;
+    }
+  
+    .treatmentGrid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .faqGrid {
+      grid-template-columns: 1fr;
+    }
+  
+    .contactSection {
+      flex-direction: column;
+      padding: 60px 20px;
+    }
+  
+    .contactForm {
+      width: 100%;
+      margin-top: 40px;
+    }
+  
+    .footer {
+      padding: 60px 20px;
+    }
+  
+    .footerContent {
+      flex-direction: column;
+    }
+  
+    .footerNav {
+      flex-direction: column;
+      gap: 40px;
+      margin-top: 40px;
+    }
+  
+    .footerBottom {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      margin-top: 60px;
+    }
+  }
+  

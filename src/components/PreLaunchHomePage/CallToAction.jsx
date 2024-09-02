@@ -9,8 +9,8 @@ function CallToAction() {
   return (
     <section className={styles.callToAction}>
       <div className={styles.ctaContent}>
+        <span className={styles.ctaSubtitle}>WE'RE HERE FOR YOU</span>
         <h2 className={styles.ctaTitle}>
-          <span className={styles.ctaSubtitle}>WE'RE HERE FOR YOU</span>
           Book your on-demand infusion today
         </h2>
         <p className={styles.ctaDescription}>

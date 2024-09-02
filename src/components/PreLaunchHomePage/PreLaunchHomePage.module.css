@@ -466,7 +466,7 @@ button {
   background-image: url('../../images/smiling_nurse_stock.png');
   background-repeat: no-repeat;
   background-position: bottom;
-  background-position-x: 460px;
+  background-position-x:69%;
   display: flex;
   border-radius: 22px;
   justify-content: space-between;
@@ -485,7 +485,7 @@ button {
   position: relative;
   z-index: 1;
   color: #fff;
-  max-width: 618px;
+  max-width: 500px;
 }
 
 .ctaSubtitle {
@@ -500,13 +500,14 @@ button {
   font-size: 36px;
   font-weight: 700;
   line-height: 1;
+  margin: 0;
   margin-bottom: 11px;
 }
 
 .ctaDescription {
   font-size: 20px;
   line-height: 1.5;
-  margin-bottom: 20px;
+  margin: 0;;
 }
 
 .ctaButtons {
