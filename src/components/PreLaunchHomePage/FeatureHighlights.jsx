@@ -51,18 +51,18 @@ function FeatureHighlights() {
   ];
 
   return (
-    <section className={styles.featureHighlights}>
-      <h2 className={styles.featureTitle}>Meeting you where you are</h2>
-      <p className={styles.featureDescription}>
+    <section className="featureHighlights">
+      <h2 className="featureTitle">Meeting you where you are</h2>
+      <p className="featureDescription">
         Literally, and figuratively. We surround families and patients
         throughout their infusion therapy journey with seamless support every
         step of the way.
       </p>
-      <div className={styles.featureGrid}>
+      <div className="featureGrid">
         {features.map((feature, index) => (
-          <div key={index} className={styles.featureCard}>
-            <h3 className={styles.featureCardTitle}>{feature.title}</h3>
-            <p className={styles.featureCardDescription}>
+          <div key={index} className="featureCard">
+            <h3 className="featureCardTitle">{feature.title}</h3>
+            <p className="featureCardDescription">
               {feature.description}
             </p>
           </div>

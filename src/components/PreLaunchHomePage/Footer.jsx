@@ -6,26 +6,26 @@ import styles from "./PreLaunchHomePage.module.css";
 
 function Footer() {
   return (
-    <footer className={styles.footer}>
-      <div className={styles.footerContent}>
-        <div className={styles.footerMission}>
+    <footer className="footer">
+      <div className="footerContent">
+        <div className="footerMission">
           <img
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/ea98d19a3b228f9ba2bfaf591ca10cbd41b1b8b727c85966a9fdc8b9abbd1696?placeholderIfAbsent=true&apiKey=03b8c186f0974d22b1cfe3aef28c106c"
             alt="Aivy Health Logo"
-            className={styles.footerLogo}
+            className="footerLogo"
           />
-          <div className={styles.missionStatement}>
-            <h3 className={styles.missionTitle}>Our Mission</h3>
-            <p className={styles.missionDescription}>
+          <div className="missionStatement">
+            <h3 className="missionTitle">Our Mission</h3>
+            <p className="missionDescription">
               Committed to making infusion therapy easy, accessible, and
               personalized for every patient.
             </p>
           </div>
         </div>
-        <nav className={styles.footerNav}>
-          <div className={styles.footerNavColumn}>
-            <h4 className={styles.footerNavTitle}>The Company</h4>
-            <ul className={styles.footerNavList}>
+        <nav className="footerNav">
+          <div className="footerNavColumn">
+            <h4 className="footerNavTitle">The Company</h4>
+            <ul className="footerNavList">
               <li>
                 <a href="#features">Features</a>
               </li>
@@ -43,9 +43,9 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div className={styles.footerNavColumn}>
-            <h4 className={styles.footerNavTitle}>Blog</h4>
-            <ul className={styles.footerNavList}>
+          <div className="footerNavColumn">
+            <h4 className="footerNavTitle">Blog</h4>
+            <ul className="footerNavList">
               <li>
                 <a href="#news">News</a>
               </li>
@@ -57,9 +57,9 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div className={styles.footerNavColumn}>
-            <h4 className={styles.footerNavTitle}>Getting Started</h4>
-            <ul className={styles.footerNavList}>
+          <div className="footerNavColumn">
+            <h4 className="footerNavTitle">Getting Started</h4>
+            <ul className="footerNavList">
               <li>
                 <a href="#faq">FAQ</a>
               </li>
@@ -76,15 +76,15 @@ function Footer() {
           </div>
         </nav>
       </div>
-      <div className={styles.footerBottom}>
-        <p className={styles.copyright}>
+      <div className="footerBottom">
+        <p className="copyright">
           © 2024 Aivy Health. All rights reserved.
         </p>
-        <div className={styles.legalLinks}>
-          <a href="#privacy" className={styles.legalLink}>
+        <div className="legalLinks">
+          <a href="#privacy" className="legalLink">
             Privacy Policy
           </a>
-          <a href="#terms" className={styles.legalLink}>
+          <a href="#terms" className="legalLink">
             Terms of Service
           </a>
         </div>

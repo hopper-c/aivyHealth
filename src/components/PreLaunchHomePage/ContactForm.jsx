@@ -6,73 +6,73 @@ import styles from "./PreLaunchHomePage.module.css";
 
 function ContactForm() {
   return (
-    <section className={styles.contactSection}>
-      <div className={styles.contactInfo}>
-        <h2 className={styles.contactTitle}>Still have questions?</h2>
-        <p className={styles.contactDescription}>
+    <section className="contactSection">
+      <div className="contactInfo">
+        <h2 className="contactTitle">Still have questions?</h2>
+        <p className="contactDescription">
           Contact us to explore more ways we can help you achieve health.
         </p>
         <img
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/aa27cbb0fc23678587417a6f38364ec1f5c46d3fb717b177145cffe47f75b835?placeholderIfAbsent=true&apiKey=03b8c186f0974d22b1cfe3aef28c106c"
           alt="Contact illustration"
-          className={styles.contactImage}
+          className="contactImage"
         />
       </div>
-      <form className={styles.contactForm}>
-        <div className={styles.formRow}>
+      <form className="contactForm">
+        <div className="formRow">
           <input
             type="text"
             placeholder="First"
             aria-label="First Name"
-            className={styles.formInput}
+            className="formInput"
           />
           <input
             type="text"
             placeholder="Last"
             aria-label="Last Name"
-            className={styles.formInput}
+            className="formInput"
           />
         </div>
-        <div className={styles.formRow}>
+        <div className="formRow">
           <input
             type="email"
             placeholder="Email"
             aria-label="Email"
-            className={styles.formInput}
+            className="formInput"
           />
           <input
             type="tel"
             placeholder="Phone Number"
             aria-label="Phone Number"
-            className={styles.formInput}
+            className="formInput"
           />
         </div>
-        <div className={styles.formRow}>
+        <div className="formRow">
           <input
             type="text"
             placeholder="State"
             aria-label="State"
-            className={styles.formInput}
+            className="formInput"
           />
           <input
             type="text"
             placeholder="Insurance Provider"
             aria-label="Insurance Provider"
-            className={styles.formInput}
+            className="formInput"
           />
         </div>
         <input
           type="text"
           placeholder="Subject"
           aria-label="Subject"
-          className={styles.formInput}
+          className="formInput"
         />
         <textarea
           placeholder="How can we help you?"
           aria-label="How can we help you?"
-          className={styles.formTextarea}
+          className="formTextarea"
         ></textarea>
-        <button type="submit" className={styles.submitButton}>
+        <button type="submit" className="submitButton">
           Submit
         </button>
       </form>

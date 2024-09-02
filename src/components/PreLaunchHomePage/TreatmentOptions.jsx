@@ -17,15 +17,15 @@ function TreatmentOptions() {
   ];
 
   return (
-    <section className={styles.treatmentOptions}>
+    <section className="treatmentOptions">
       <img
         src="https://cdn.builder.io/api/v1/image/assets/TEMP/4e9dede1ce874d9422928285bcf180992d7bdd007ef3a4c4c511d14ecd4cfa30?placeholderIfAbsent=true&apiKey=03b8c186f0974d22b1cfe3aef28c106c"
         alt=""
-        className={styles.treatmentBackground}
+        className="treatmentBackground"
       />
-      <div className={styles.treatmentGrid}>
+      <div className="treatmentGrid">
         {treatments.map((treatment, index) => (
-          <div key={index} className={styles.treatmentCard + ' card' + index}>
+          <div key={index} className={'treatmentCard' + ' card' + index}>
             {treatment}
           </div>
         ))}

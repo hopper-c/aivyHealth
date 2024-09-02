@@ -6,33 +6,33 @@ import styles from "./PreLaunchHomePage.module.css";
 
 function Header() {
   return (
-    <header className={styles.header}>
-      <div className={styles.topMenu}>
-        <div className={styles.login}>Login</div>
-        <button className={styles.joinButton}>Join Now</button>
-        <button className={styles.appointmentButton}>
+    <header className="header">
+      <div className="topMenu">
+        <div className="login">Login</div>
+        <button className="joinButton">Join Now</button>
+        <button className="appointmentButton">
           Request an Appointment
         </button>
       </div>
-      <nav className={styles.mainNav}>
-        <ul className={styles.navList}>
+      <nav className="mainNav">
+        <ul className="navList">
           <li>
-            <a href="#patients" className={styles.navLink}>
+            <a href="#patients" className="navLink">
               For Patients
             </a>
           </li>
           <li>
-            <a href="#pharmacies" className={styles.navLink}>
+            <a href="#pharmacies" className="navLink">
               For Pharmacies
             </a>
           </li>
           <li>
-            <a href="#employers" className={styles.navLink}>
+            <a href="#employers" className="navLink">
               For Employers
             </a>
           </li>
           <li>
-            <a href="#providers" className={styles.navLink}>
+            <a href="#providers" className="navLink">
               For Providers
             </a>
           </li>
@@ -40,43 +40,43 @@ function Header() {
         <img
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/479e72cf12503a2f4604c9b0be9eb4bc9f8afa062ae61bc02f2fedd8f30387e5?placeholderIfAbsent=true&apiKey=03b8c186f0974d22b1cfe3aef28c106c"
           alt="Aivy Health Logo"
-          className={styles.logo}
+          className="logo"
         />
         <div className="rightContainer">
-          <ul className={styles.navList}>
+          <ul className="navList">
             <li>
-              <a href="#faqs" className={styles.navLink}>
+              <a href="#faqs" className="navLink">
                 FAQs
               </a>
             </li>
             <li>
-              <a href="#forms" className={styles.navLink}>
+              <a href="#forms" className="navLink">
                 Forms
               </a>
             </li>
           </ul>
-          <form className={styles.searchForm}>
-            <label htmlFor="search" className={styles.visuallyHidden}>
+          <form className="searchForm">
+            <label htmlFor="search" className="visuallyHidden">
               Search
             </label>
             <input
               type="search"
               id="search"
               placeholder="Search"
-              className={styles.searchInput}
+              className="searchInput"
             />
-            <button type="submit" className={styles.searchButton}>
+            <button type="submit" className="searchButton">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets/TEMP/c0bfde7a-ecfd-4bf6-8547-d6e222660177?placeholderIfAbsent=true&apiKey=03b8c186f0974d22b1cfe3aef28c106c"
                 alt="Search"
-                className={styles.searchIcon}
+                className="searchIcon"
               />
             </button>
           </form>
           <img
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/ceff5ca879f44c414c22fb2e41208547f876e3d24ca9f49aadf357dd6c0b9a53?placeholderIfAbsent=true&apiKey=03b8c186f0974d22b1cfe3aef28c106c"
             alt="User Profile"
-            className={styles.profileIcon}
+            className="profileIcon"
           />
         </div>
       </nav>

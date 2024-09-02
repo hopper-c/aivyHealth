@@ -7,28 +7,28 @@ import smilingNurse from '../../images/smiling_nurse_stock.png'
 
 function CallToAction() {
   return (
-    <section className={styles.callToAction}>
-      <div className={styles.ctaContent}>
-        <span className={styles.ctaSubtitle}>WE'RE HERE FOR YOU</span>
-        <h2 className={styles.ctaTitle}>
+    <section className="callToAction">
+      <div className="ctaContent">
+        <span className="ctaSubtitle">WE'RE HERE FOR YOU</span>
+        <h2 className="ctaTitle">
           Book your on-demand infusion today
         </h2>
-        <p className={styles.ctaDescription}>
+        <p className="ctaDescription">
           Curious if on-demand infusion is right for you? Message or email us at
           any time. We'll help you every step of the way.
         </p>
       </div>
-      <div className={styles.flexRow}>
+      <div className="flexRow">
         {/* <img
           src={smilingNurse}
           alt=""
-          className={styles.ctaBackground}
+          className="ctaBackground}
         /> */}
-        <div className={styles.ctaButtons}>
-          <button className={styles.appointmentButton}>
+        <div className="ctaButtons">
+          <button className="appointmentButton">
             Request An Appointment
           </button>
-          <button className={styles.referralButton}>Submit A Referral</button>
+          <button className="referralButton">Submit A Referral</button>
         </div>
       </div>
     </section>

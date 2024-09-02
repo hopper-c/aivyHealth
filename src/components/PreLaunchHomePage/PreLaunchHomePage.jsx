@@ -18,10 +18,10 @@ import Footer from "./Footer";
 
 function PreLaunchHomePage() {
   return (
-    <div className={styles.preLaunchHomePage}>
+    <div className="preLaunchHomePage">
       <Header />
       <IntroSection />
-      <section className={styles.caseStudySection}>
+      <section className="caseStudySection">
         <CaseStudy />
         <HowItWorks />
       </section>

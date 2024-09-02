@@ -6,22 +6,22 @@ import styles from "./PreLaunchHomePage.module.css";
 
 function Testimonial() {
   return (
-    <section className={styles.testimonial}>
+    <section className="testimonial">
       <img
         src="https://cdn.builder.io/api/v1/image/assets/TEMP/3e7ea82ed723c22f25ab1e7cf84a3c1095e799e548810f3e1aed409ef9dfd550?placeholderIfAbsent=true&apiKey=03b8c186f0974d22b1cfe3aef28c106c"
         alt=""
-        className={styles.testimonialQuote}
+        className="testimonialQuote"
       />
-      <blockquote className={styles.testimonialText}>
+      <blockquote className="testimonialText">
         " Knowing that I can get my Remicade and essential vitamins quickly from
         a trusted nurse, without leaving home, has made such a difference during
         my Crohn's flare-ups. It's the care I need, exactly when I need it. "
       </blockquote>
-      <footer className={styles.testimonialAuthor}>Kenji Y.</footer>
+      <footer className="testimonialAuthor">Kenji Y.</footer>
       <img
         src="https://cdn.builder.io/api/v1/image/assets/TEMP/a752f202f5bfc9fd79921387fe05687bcdf21776c19e1928dc0604b172176639?placeholderIfAbsent=true&apiKey=03b8c186f0974d22b1cfe3aef28c106c"
         alt="Portrait of Kenji Y."
-        className={styles.testimonialImage}
+        className="testimonialImage"
       />
     </section>
   );

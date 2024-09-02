@@ -48,13 +48,13 @@ function FAQSection() {
   ];
 
   return (
-    <section className={styles.faqSection}>
-      <h2 className={styles.faqTitle}>Frequently Asked Questions</h2>
-      <div className={styles.faqGrid}>
+    <section className="faqSection">
+      <h2 className="faqTitle">Frequently Asked Questions</h2>
+      <div className="faqGrid">
         {faqs.map((faq, index) => (
-          <details key={index} className={styles.faqItem}>
-            <summary className={styles.faqQuestion}>{faq.question}</summary>
-            <p className={styles.faqAnswer}>{faq.answer}</p>
+          <details key={index} className="faqItem">
+            <summary className="faqQuestion">{faq.question}</summary>
+            <p className="faqAnswer">{faq.answer}</p>
           </details>
         ))}
       </div>

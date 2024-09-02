@@ -24,25 +24,25 @@ function HowItWorks() {
   ];
 
   return (
-    <section className={styles.howItWorks}>
-      <h2 className={styles.howItWorksTitle}>How it works</h2>
-      <p className={styles.howItWorksDescription}>
+    <section className="howItWorks">
+      <h2 className="howItWorksTitle">How it works</h2>
+      <p className="howItWorksDescription">
         At Aivy Health, we deliver on-demand infusion therapy tailored to your
         needs. Whether you're managing a chronic condition with a specialty
         infusion prescribed by your physician or seeking a wellness boost, our
         service brings personalized care directly to you, wherever you are.
       </p>
       {steps.map((step, index) => (
-        <div key={index} className={styles.step}>
-          <img src={step.image} alt="" className={styles.stepImage} />
-          <div className={styles.stepInfo}>
-            <h3 className={styles.stepTitle}>
+        <div key={index} className="step">
+          <img src={step.image} alt="" className="stepImage" />
+          <div className="stepInfo">
+            <h3 className="stepTitle">
               Step {index + 1}: {step.title}
             </h3>
             <img
               src="https://cdn.builder.io/api/v1/image/assets/TEMP/4c2398f982f1edf5bf7b30736886486c29f9fa9a46f16af1ee3da61f587f6511?placeholderIfAbsent=true&apiKey=03b8c186f0974d22b1cfe3aef28c106c"
               alt=""
-              className={styles.stepIcon}
+              className="stepIcon"
             />
           </div>
         </div>

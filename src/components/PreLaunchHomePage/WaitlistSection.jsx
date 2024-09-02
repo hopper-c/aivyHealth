@@ -6,30 +6,30 @@ import styles from "./PreLaunchHomePage.module.css";
 
 function WaitlistSection() {
   return (
-    <section className={styles.waitlistSection}>
+    <section className="waitlistSection">
       <img
         src="https://cdn.builder.io/api/v1/image/assets/TEMP/d19cb20cceaae7447ed333f8caf43d34ab477678f8af10ebacefe7eb11fdd44b?placeholderIfAbsent=true&apiKey=03b8c186f0974d22b1cfe3aef28c106c"
         alt=""
-        className={styles.waitlistBackground}
+        className="waitlistBackground"
       />
-      <div className={styles.waitlistContent}>
-        <h2 className={styles.waitlistTitle}>Join our waitlist</h2>
-        <p className={styles.waitlistDescription}>
+      <div className="waitlistContent">
+        <h2 className="waitlistTitle">Join our waitlist</h2>
+        <p className="waitlistDescription">
           Receive latest infusion news, health tips, and exclusive offers
           straight to your inbox.
         </p>
-        <form className={styles.waitlistForm}>
-          <label htmlFor="email" className={styles.visuallyHidden}>
+        <form className="waitlistForm">
+          <label htmlFor="email" className="visuallyHidden">
             Email address
           </label>
           <input
             type="email"
             id="email"
             placeholder="Enter your email address..."
-            className={styles.emailInput}
+            className="emailInput"
             aria-label="Enter your email address"
           />
-          <button type="submit" className={styles.submitButton}>
+          <button type="submit" className="submitButton">
             Send
           </button>
         </form>
