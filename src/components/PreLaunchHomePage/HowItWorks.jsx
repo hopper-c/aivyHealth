@@ -34,7 +34,6 @@ function HowItWorks() {
       </p>
       {steps.map((step, index) => (
         <div key={index} className="step">
-          <img src={step.image} alt="" className="stepImage" />
           <div className="stepInfo">
             <h3 className="stepTitle">
               Step {index + 1}: {step.title}
