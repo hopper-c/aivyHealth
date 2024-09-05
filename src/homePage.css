@@ -138,7 +138,7 @@ h1, h2, h3, p {
 .introSection {
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 109px;
     padding: 43px 70px;
     justify-content: center;
 }
@@ -165,10 +165,20 @@ h1, h2, h3, p {
     display: flex;
     gap: 22px;
     margin-top: 62px;
+    justify-content: center;
+}
+
+.typeWriter {
+    width: 600px;
+    text-align: left;
+    background: #71B4C31A;
+    border-radius: 22px;
+    padding: 20px;
+    min-height: 66px;
 }
 
 .treatmentButton,
-.coverageButton {
+.joinWaitlistButton {
     border-radius: 22px;
     padding: 9px 50px;
     font-size: 16px;
@@ -181,6 +191,12 @@ h1, h2, h3, p {
 }
 
 .treatmentButton {
+    background-color: #fff;
+    color: #09051C;
+    border: 1px solid #09051C;
+}
+
+.joinWaitlistButton {
     background-color: #2f7089;
     color: #fff;
 }
@@ -263,6 +279,8 @@ h1, h2, h3, p {
     color: #191720;
     font-size: 56px;
     line-height: 65px;
+    display: flex;
+    gap: 16px;
 }
 
 .howItWorksDescription {
@@ -822,6 +840,14 @@ h1, h2, h3, p {
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
     border: 0;
+}
+
+.whatWeTreatContainer {
+    display: flex;
+    font-size: 56px;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
 }
 
 @media (max-width: 991px) {

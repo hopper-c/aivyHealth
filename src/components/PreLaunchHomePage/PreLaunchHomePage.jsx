@@ -15,6 +15,7 @@ import CallToAction from "./CallToAction";
 import FAQSection from "./FAQSection";
 import ContactForm from "./ContactForm";
 import Footer from "./Footer";
+import WhatWeTreat from "./WhatWeTreat";
 
 function PreLaunchHomePage() {
   return (
@@ -25,6 +26,7 @@ function PreLaunchHomePage() {
         <CaseStudy />
         <HowItWorks />
       </section>
+      <WhatWeTreat />
       <WaitlistSection />
       <FeatureHighlights />
       <Testimonial />

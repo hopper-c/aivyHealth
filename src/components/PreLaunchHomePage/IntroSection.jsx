@@ -18,9 +18,9 @@ function IntroSection() {
           patient-centric solution.
         </p>
         <div className="introCta">
-          <button className="treatmentButton">What we treat</button>
-          <button className="coverageButton">
-            See if you're covered
+          <button className="joinWaitlistButton">Join the waitlist</button>
+          <button className="treatmentButton">
+            What we treat
           </button>
         </div>
       </div>

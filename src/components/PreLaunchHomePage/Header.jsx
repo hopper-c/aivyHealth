@@ -8,11 +8,12 @@ function Header() {
   return (
     <header className="header">
       <div className="topMenu">
-        <div className="login">Login</div>
-        <button className="joinButton">Join Now</button>
-        <button className="appointmentButton">
+        {/* todo: add back login and appointmentButton post launch */}
+        {/* <div className="login">Login</div> */}
+        <button className="joinButton">Join the waitlist</button>
+        {/* <button className="appointmentButton">
           Request an Appointment
-        </button>
+        </button> */}
       </div>
       <nav className="mainNav">
         <ul className="navList">
@@ -49,11 +50,12 @@ function Header() {
                 FAQs
               </a>
             </li>
-            <li>
+            {/* todo: add back forms postlaunch */}
+            {/* <li>
               <a href="#forms" className="navLink">
                 Forms
               </a>
-            </li>
+            </li> */}
           </ul>
           <form className="searchForm">
             <label htmlFor="search" className="visuallyHidden">

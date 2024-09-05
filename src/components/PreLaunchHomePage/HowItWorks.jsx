@@ -25,7 +25,9 @@ function HowItWorks() {
 
   return (
     <section className="howItWorks">
-      <h2 className="howItWorksTitle">How it works</h2>
+      <span className="howItWorksTitle">
+        How <h1>AivyHealth</h1> works
+      </span>
       <p className="howItWorksDescription">
         At Aivy Health, we deliver on-demand infusion therapy tailored to your
         needs. Whether you're managing a chronic condition with a specialty
