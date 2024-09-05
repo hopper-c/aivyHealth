@@ -25,10 +25,10 @@ function CallToAction() {
           className="ctaBackground}
         /> */}
         <div className="ctaButtons">
-          <button className="appointmentButton">
-            Request An Appointment
+          <button className="waitlist">
+            Join the waitlist
           </button>
-          <button className="referralButton">Submit A Referral</button>
+          <button className="contactUs">Contact us</button>
         </div>
       </div>
     </section>

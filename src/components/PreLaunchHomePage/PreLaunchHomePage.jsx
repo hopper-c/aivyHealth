@@ -10,7 +10,6 @@ import HowItWorks from "./HowItWorks";
 import WaitlistSection from "./WaitlistSection";
 import FeatureHighlights from "./FeatureHighlights";
 import Testimonial from "./Testimonial";
-import TreatmentOptions from "./TreatmentOptions";
 import CallToAction from "./CallToAction";
 import FAQSection from "./FAQSection";
 import ContactForm from "./ContactForm";
@@ -30,7 +29,6 @@ function PreLaunchHomePage() {
       <WaitlistSection />
       <FeatureHighlights />
       <Testimonial />
-      <TreatmentOptions />
       <CallToAction />
       <FAQSection />
       <ContactForm />
