@@ -519,7 +519,7 @@ h1, h2, h3, p {
 .callToAction {
     position: relative;
     padding: 32px 24px;
-    margin: 70px 70px 0;
+    margin: 0 70px 0;
     background-color: #2F7089;
     text-align: left;
     background-image: url('./images/smiling_nurse_stock.png');
@@ -843,6 +843,44 @@ h1, h2, h3, p {
     gap: 30px;
     justify-content: center;
     align-items: center;
+    margin-top: 113px;
+}
+
+.employersCover {
+    display: flex;
+    justify-content: center;
+    margin-top: 157px;
+    margin-bottom: 100px;
+
+    .employersImage {
+        width: 600px;
+        background: blue;
+    }
+
+    .employersTextContainer {
+        display: flex;
+        flex-direction: column;
+        max-width: 800px;
+
+        span {
+            font-size: 20px;
+
+            &:first-of-type {
+                margin-bottom: 16px;
+            }
+        }
+
+        h2 {
+            font-size: 56px;
+            margin-bottom: 34px;
+        }
+    }
+}
+
+.employerSearchContainer {
+    .searchInput {
+        width: 100%;
+    }
 }
 
 @media (max-width: 991px) {

@@ -15,6 +15,7 @@ import FAQSection from "./FAQSection";
 import ContactForm from "./ContactForm";
 import Footer from "./Footer";
 import WhatWeTreat from "./WhatWeTreat";
+import EmployersCover from "./EmployersCover"
 
 function PreLaunchHomePage() {
   return (
@@ -30,6 +31,7 @@ function PreLaunchHomePage() {
       <FeatureHighlights />
       <Testimonial />
       <CallToAction />
+      <EmployersCover />
       <FAQSection />
       <ContactForm />
       <Footer />

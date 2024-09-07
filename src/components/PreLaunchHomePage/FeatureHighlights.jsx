@@ -9,44 +9,32 @@ function FeatureHighlights() {
     {
       title: "Every patient deserves safe and accessible care",
       description:
-        "We ensure high-quality, on-demand infusions that prioritize patient safety and convenience in every step.",
-      image:
-        "https://cdn.builder.io/api/v1/image/assets/TEMP/331d460cece024e29eabb44d3912e1891bde749a41b9ab18ed34eea2e56f7920?placeholderIfAbsent=true&apiKey=03b8c186f0974d22b1cfe3aef28c106c",
+        "We ensure high-quality, on-demand infusions that prioritize patient safety and convenience in every step."
     },
     {
       title: "Tech forward care, people first approach",
       description:
-        "Book your appointments, message your infusion nurse, get support from our nurse navigator and more—all in one secure place.",
-      image:
-        "https://cdn.builder.io/api/v1/image/assets/TEMP/0f4a06536b4a854d606adc2bd7cd0af1b4fb986541a6d8305daac26c152f5380?placeholderIfAbsent=true&apiKey=03b8c186f0974d22b1cfe3aef28c106c",
+        "Book your appointments, message your infusion nurse, get support from our nurse navigator and more—all in one secure place."
     },
     {
       title: "Partnerships with providers, pharmacies, and employers",
       description:
-        "Whether its your employer or your provider, we strive to integrate our services into your care plan so you can get affordable quality care.",
-      image:
-        "https://cdn.builder.io/api/v1/image/assets/TEMP/bfc1d53682d3251152dfe0df1e48fb002f300b8b30944e24c5c4f6d0f39764fd?placeholderIfAbsent=true&apiKey=03b8c186f0974d22b1cfe3aef28c106c",
+        "Whether its your employer or your provider, we strive to integrate our services into your care plan so you can get affordable quality care."
     },
     {
       title: "On-demand Patient Access",
       description:
-        "Difficulty booking appointments, commute time, uncomfortable settings, and high nurse to patient ratios are a thing of the past. With Aivy Health, you are back in control of your care.",
-      image:
-        "https://cdn.builder.io/api/v1/image/assets/TEMP/82d6e30a376094e5983da742d19c5fbbfed7c24d40575e3d1dbd2cffdbcb2074?placeholderIfAbsent=true&apiKey=03b8c186f0974d22b1cfe3aef28c106c",
+        "Difficulty booking appointments, commute time, uncomfortable settings, and high nurse to patient ratios are a thing of the past. With Aivy Health, you are back in control of your care."
     },
     {
       title: "Skilled Nurses",
       description:
-        "Our nurses are continually trained on the latest policies, procedures, and evidence based practice in infusion administration. We employ experts in infusion care.",
-      image:
-        "https://cdn.builder.io/api/v1/image/assets/TEMP/79e7ee5429721fd1341c196bea089f94561d739131c44040c898c21d609b6e90?placeholderIfAbsent=true&apiKey=03b8c186f0974d22b1cfe3aef28c106c",
+        "Our nurses are continually trained on the latest policies, procedures, and evidence based practice in infusion administration. We employ experts in infusion care."
     },
     {
       title: "Support & Guidance",
       description:
-        "From start to finish, we offer continuous support and guidance to help you navigate your infusion therapy with confidence.",
-      image:
-        "https://cdn.builder.io/api/v1/image/assets/TEMP/94e34cc6e0096fe595fad07581c7b4d8d69b9d004915ac1b5eee0683482a355f?placeholderIfAbsent=true&apiKey=03b8c186f0974d22b1cfe3aef28c106c",
+        "From start to finish, we offer continuous support and guidance to help you navigate your infusion therapy with confidence."
     },
   ];
 
