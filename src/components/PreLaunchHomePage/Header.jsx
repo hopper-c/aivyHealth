@@ -39,7 +39,7 @@ function Header() {
             </a>
           </li>
         </ul>
-        <h1>AivyHealth</h1>
+        <h1 className="logo">AivyHealth</h1>
         <div className="rightContainer">
           <ul className="navList">
             <li>

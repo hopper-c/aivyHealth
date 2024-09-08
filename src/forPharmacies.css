@@ -1,0 +1,38 @@
+.featureHighlights.forPharmacies {
+    background-color: #F5F5ED;
+}
+
+.whatWeDo {
+    margin: 138px auto 0;
+    position: relative;
+    width: fit-content;
+}
+
+.checkItem {
+    display: flex;
+    margin-bottom: 20px;
+
+    span {
+        font-size: 20px;
+        max-width: 300px;
+    }
+
+    img {
+        margin-right: 25px;
+    }
+}
+
+.checkListContainer {
+    text-align: left;
+    position: absolute;
+    right: 67px;
+    top: 150px;
+
+    ul {
+        padding: 0;
+    }
+
+    h2 {
+        font-size: 46px;
+    }
+}
