@@ -13,7 +13,7 @@ h1, h2, h3, p {
     flex-direction: row;
 }
 
-.preLaunchHomePage {
+.preLaunchHomePage, .forPharmaciesLanding, .forEmployersLanding {
     background-color: #fff;
     display: flex;
     flex-direction: column;
@@ -111,13 +111,12 @@ h1, h2, h3, p {
 .searchInput {
     border-radius: 16px;
     background-color: #71b4c31c;
-    padding: 13px 16px;
+    padding: 13px 16px 13px 32px;
     color: black;
     border: none;
 
     &::placeholder {
         color: #2f6f897f;
-        padding-left: 16px;
     }
 }
 
@@ -139,7 +138,7 @@ h1, h2, h3, p {
     display: flex;
     align-items: center;
     gap: 109px;
-    padding: 43px 70px;
+    padding: 63px 70px;
     justify-content: center;
 }
 

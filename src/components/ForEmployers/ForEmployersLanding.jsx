@@ -7,17 +7,21 @@ import Header from "../PreLaunchHomePage/Header.jsx";
 import Footer from "../PreLaunchHomePage/Footer.jsx";
 import IntroSection from "./IntroSection.jsx";
 import FeatureHighlights from "./FeatureHighlights.jsx";
-import HowItWorks from "./HowItWorks.jsx";
-import DemoRequest from "./DemoRequest.jsx";
+import Partnership from "./Partnership.jsx";
+import ScheduleConsultation from "./ScheduleConsultation.jsx";
+import Testimonial from "./Testimonial.jsx";
+import Roi from "./Roi.jsx"
 
 function PreLaunchHomePage() {
   return (
-    <div className="forPharmaciesLanding">
+    <div className="forEmployersLanding">
       <Header />
         <IntroSection />
         <FeatureHighlights />
-        <HowItWorks />
-        <DemoRequest />
+        <Partnership />
+        <Testimonial/>
+        <Roi/>
+        <ScheduleConsultation />
       <Footer />
     </div>
   );

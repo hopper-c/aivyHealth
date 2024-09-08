@@ -1,0 +1,220 @@
+.ourServices {
+    max-width: 1400px;
+    margin: 120px auto 0;
+    display: flex;
+    flex-direction: column;
+
+    .serviceContainer {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        text-align: left;
+        max-width: 600px;
+    }
+
+    h1 {
+        font-size: 56px;
+        margin-bottom: 49px;
+    }
+
+    .serviceHeader {
+        font-size: 36px;
+    }
+
+    .vector {
+        min-width: 225px;
+        height: 225px;
+        border-radius: 100%;
+    }
+
+    .wellness {
+        display: flex;
+        background-color: #fff;
+        border-radius: 125px 125px 125px 125px;
+        gap: 95px;
+        width: 1100px;
+        margin-bottom: 10px;
+
+        .vector {
+            background-color: #2F7089;
+        }
+    }
+
+    .booster {
+        display: flex;
+        background-color: #71B4C3;
+        border-radius: 125px 125px 125px 125px;
+        gap: 95px;
+        width: 1100px;
+        align-self: flex-end;
+        margin-bottom: 10px;
+
+        .vector {
+            background-color: #fff;
+            order: 2;
+        }
+
+        .serviceContainer {
+            margin-left: 180px;
+        }
+    }
+
+    .infusions {
+        display: flex;
+        background-color: #fff;
+        border-radius: 125px 125px 125px 125px;
+        gap: 95px;
+        width: 1100px;
+
+        .vector {
+            background-color: #EEB07F;
+        }
+    }
+}
+
+.partnership {
+    background: linear-gradient(0deg, #FFF 0%, #F5F5ED 100%);
+    max-width: unset;
+    margin: 0;
+    position: relative;
+    margin-bottom: 65px;
+}
+
+.testimonial.forEmployees {
+    padding-bottom: 0;
+}
+
+.book-consultation {
+    .contactForm {
+        margin: 60px auto 178px;
+    }
+
+    .formInput,
+    .formTextarea {
+        background-color: #F2F2F2;
+
+        &::placeholder {
+            color: black;
+        }
+    }
+}
+
+.employer-stats {
+    border-radius: 22px;
+    display: flex;
+    border: 1px solid #09051C;
+    background: #2F7089;
+    box-shadow: 1px 1px 50px 0px rgba(9, 5, 28, 0.15);
+    height: 300px;
+    max-width: 1400px;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    .number {
+        font-size: 90px;
+        color: #EEB07F;
+    }
+
+    .details {
+        color: #fff;
+        font-size: 18px;
+        max-width: 350px;
+    }
+
+    .stats-container {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 16px;
+    }
+}
+
+.roi-container {
+    display: flex;
+    gap: 55px;
+    max-width: 1440px;
+    margin: auto;
+
+    .text-container {
+        display: flex;
+        flex-direction: column;
+        max-width: 638px;
+        text-align: left;
+
+        h3 {
+            font-size: 20px;
+            color: #EEB07F;
+            margin-bottom: 3px;
+        }
+
+        span {
+            font-size: 56px;
+            margin-bottom: 26px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+    }
+
+    .roi-calculator {
+        display: flex;
+        flex-direction: column;
+        border-radius: 22px;
+        background: rgba(113, 180, 195, 0.05);
+        padding: 31px;
+        width: 631px;
+        margin: auto;
+
+        h3 {
+            font-size: 20px;
+            color: #2F7089;
+            margin-bottom: 18px;
+        }
+
+        span {
+            font-size: 56px;
+            margin-bottom: 36px;
+        }
+
+        input:first-of-type {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.annual-savings-container {
+    background: linear-gradient(180deg, #FFF 0%, #F5F5ED 100%);
+    padding: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-bottom: 80px;
+
+    .results {
+        display: flex;
+        justify-content: center;
+
+        .column-1,
+        .column-2,
+        .column-3 {
+            display: flex;
+            flex-direction: column;
+            width: 450px;
+        }
+
+        .x-result {
+            font-size: 56px;
+            color: #2F7089;
+        }
+
+        .result-text {
+            font-size: 18px;
+        }
+    }
+}
