@@ -28,10 +28,12 @@ function PreLaunchHomePage() {
       </section>
       <WhatWeTreat />
       <WaitlistSection />
-      <FeatureHighlights />
-      <Testimonial />
-      <CallToAction />
-      <EmployersCover />
+      <div className="gradient-container">
+        <FeatureHighlights />
+        <Testimonial />
+        <CallToAction />
+        <EmployersCover />
+      </div>
       <FAQSection />
       <ContactForm />
       <Footer />

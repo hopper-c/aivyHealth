@@ -3,11 +3,12 @@
  */
 import React from "react";
 import searchIcon from "../../images/searchIcon.svg";
+import iphone from "../../images/iphone.svg";
 
 function EmployersCover() {
     return (
         <section className="employersCover">
-            <img className="employersImage" src="" />
+            <img className="employersImage" src={iphone} />
             <div className="employersTextContainer">
                 <h2>Employers cover Aivy Health</h2>
                 <span>Your company may be covering the cost of Aivy Health for employees
