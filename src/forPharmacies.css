@@ -56,3 +56,9 @@
         }
     }
 }
+
+@media (max-width: 991px) {
+    .demo-request {
+        padding: 0 15px;
+    }
+}

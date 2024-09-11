@@ -7,9 +7,9 @@ import ForEmployers from './components/ForEmployers/ForEmployersLanding';
 function App() {
   return (
     <div className="App">
-      {/* <PreLaunchHomePage/> */}
+      <PreLaunchHomePage/>
       {/* <ForPharmacies/> */}
-      <ForEmployers />
+      {/* <ForEmployers /> */}
     </div>
   );
 }
