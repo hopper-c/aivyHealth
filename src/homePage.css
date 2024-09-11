@@ -620,12 +620,15 @@ h1, h2, h3, p {
 
 .faqGrid {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    height: 470px;
-    max-width: 1400px;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    max-width: 90%;
     margin: 0 auto;
     column-gap: 95px;
+
+    .col-1, .col-2 {
+        width: 50%;
+    }
 }
 
 .faqItem {
@@ -633,7 +636,6 @@ h1, h2, h3, p {
     border-bottom: 1px solid black;
     padding: 25px;
     height: fit-content;
-    width: 656px;
 
     &:first-of-type {
         border-top: 1px solid black;
@@ -674,6 +676,7 @@ h1, h2, h3, p {
     color: #000;
     font-size: 16px;
     line-height: 1.5;
+    text-align: left;
 }
 
 .contactSection {
@@ -958,7 +961,7 @@ h1, h2, h3, p {
     }
 
     .faqItem {
-        width: fit-content;
+        width: auto;
     }
 
     .faqTitle {
@@ -1123,6 +1126,17 @@ h1, h2, h3, p {
 
     .faqGrid {
         grid-template-columns: 1fr;
+        flex-direction: column;
+
+        .col-1, .col-2 {
+            width: 100%;
+        }
+
+        .col-2 {
+            .faqItem {
+                border-top: none;
+            }
+        }
     }
 
     .contactSection {
