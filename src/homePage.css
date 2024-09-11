@@ -908,9 +908,118 @@ h1, h2, h3, p {
     }
 }
 
+.hamburgerContainer {
+    display: none;
+}
+
 @media (max-width: 991px) {
     .header {
-        padding: 22px 20px;
+        /* padding: 22px 20px; */
+    }
+
+    .hamburgerContainer {
+        display: block;
+    }
+
+    .topMenu {
+        padding: 22px 15px 22px 15px;
+    }
+
+    .testimonialText {
+        font-size: 16px;
+        padding: 0 16px;
+    }
+
+    .testimonialQuote {
+        width: 140px;
+    }
+
+    .roi-container {
+        .text-container {
+            justify-content: flex-start;
+            padding: 0 15px;
+        }
+
+        flex-direction: column;
+        max-width: 100% !important;
+
+        .roi-calculator {
+            padding: 0 15px !important;
+            width: -webkit-fill-available !important;
+        }
+    }
+
+    .annual-savings-container {
+        padding: 20px 0 !important;
+
+        .x-result {
+            font-size: 20px !important;
+        }
+
+        .result-text {
+            font-size: 16px !important;
+        }
+
+        .results {
+            padding: 0 15px;
+        }
+    }
+
+    .book-consultation {
+        padding: 0 15px;
+    }
+
+    .mainNav {
+        display: none;
+        padding: 0;
+    }
+
+    .ourServices, .wellness {
+        gap: 0px;
+
+        .vector {
+            display: none;
+        }
+    }
+
+    .ourServices {
+        .serviceHeader {
+            font-size: 20px !important;
+        }
+
+        .wellness {
+            background-color: #2F7089 !important;
+        }
+
+        .infusions {
+            background-color: #EEB07F !important;
+        }
+
+        .serviceContainer {
+            padding: 52px;
+            text-align: center !important;
+            margin-left: 0 !important;
+        }
+    }
+
+    .wellness, .booster, .infusions {
+        max-width: 100%;
+        color: white;
+    }
+
+    .featureGrid {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .partnership {
+        img {
+            width: 100%;
+        }
+
+        .employer-stats {
+            display: none;
+        }
     }
 
     .introSection {
@@ -959,7 +1068,7 @@ h1, h2, h3, p {
     }
 
     .footer {
-        padding: 60px 20px;
+        padding: 60px 20px 8px 20px;
     }
 
     .footerContent {
@@ -968,8 +1077,9 @@ h1, h2, h3, p {
 
     .footerNav {
         flex-direction: column;
-        gap: 40px;
+        gap: 0px;
         margin-top: 40px;
+        text-align: left;
     }
 
     .footerBottom {

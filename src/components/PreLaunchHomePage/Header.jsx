@@ -4,6 +4,7 @@
 import React from "react";
 import searchIcon from "../../images/searchIcon.svg";
 import profileIcon from "../../images/profile-icon.svg";
+import HamburgerMenu from "./HamburgerMenu";
 
 function Header() {
   return (
@@ -16,6 +17,7 @@ function Header() {
           Request an Appointment
         </button> */}
       </div>
+      <HamburgerMenu />
       <nav className="mainNav">
         <ul className="navList">
           <li>

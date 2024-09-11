@@ -1,0 +1,130 @@
+/* HamburgerMenu.css */
+
+/* General navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    /* background-color: #49708A; */
+    color: white;
+    position: relative;
+  }
+  
+  /* Logo styling */
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Hamburger icon styling */
+  .menu-icon {
+    width: 35px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    z-index: 20;
+    position: absolute;
+    top: 36px;
+    left: 15px;
+
+    &.open {
+      right: 15px;
+      left: unset;
+    }
+  }
+  
+  .menu-icon div {
+    width: 100%;
+    height: 4px;
+    background-color: black;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Transform the hamburger into an "X" when the menu is open */
+  .menu-icon.open .line1 {
+    transform: rotate(-45deg) translate(-6px, 6px);
+    background-color: white;
+  }
+  
+  .menu-icon.open .line2 {
+    opacity: 0;
+  }
+  
+  .menu-icon.open .line3 {
+    transform: rotate(45deg) translate(-6px, -6px);
+    background-color: white;
+  }
+  
+  /* Hide the menu links initially */
+  .nav-links {
+    position: absolute;
+    top: -100vh; /* Off-screen */
+    right: 0;
+    /* height: 100vh; */
+    width: 100%;
+    background-color: #49708A;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    transition: top 0.3s ease;
+    z-index: 10;
+    margin: 0;
+  }
+  
+  .nav-links li {
+    margin: 12px 0;
+    padding-left: 20px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #ffed86;
+  }
+  
+  /* Show the menu when open */
+  .nav-links.open {
+    top: 0;
+    align-items: flex-start;
+    height: 100%;
+    justify-content: flex-start;
+    padding-top: 15px;
+    height: 500px;
+  }
+  
+  /* Responsive behavior - Hide the hamburger on larger screens */
+  @media (min-width: 768px) {
+    .menu-icon {
+      display: none;
+    }
+  
+    .nav-links {
+      position: static;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      background-color: transparent;
+      height: auto;
+      width: auto;
+    }
+  
+    .nav-links li {
+      margin: 0 20px;
+    }
+  
+    .nav-links a {
+      font-size: 18px;
+    }
+  }
+  
