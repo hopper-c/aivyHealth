@@ -78,16 +78,16 @@ function Roi() {
         </div>
         <div className="roi-calculator">
           <h3>Number of employees</h3>
-          <label id="employees-value" for="numEmployees">300</label>
+          <label id="employees-value" htmlFor="numEmployees">300</label>
           <input id="numEmployees" type="range" min="50" max="10000" value={employees} step="10" onChange={handleEmployeeChange} style={{background: calculateEmployeeBackground()}} />
-          <div class="slider-labels">
+          <div className="slider-labels">
             <span>50</span>
             <span>10,000</span>
           </div>
           <h3>Average Salary</h3>
-          <label id="salary-value" for="average">$30000</label>
+          <label id="salary-value" htmlFor="average">$30000</label>
           <input id="salary-slider" min="30000" max="250000" value={salary} step="100" type="range" onChange={handleSalaryChange} style={{background: calculateSalaryBackground()}} />
-          <div class="slider-labels">
+          <div className="slider-labels">
             <span>$30k</span>
             <span>$250k</span>
           </div>
