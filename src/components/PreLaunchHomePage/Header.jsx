@@ -5,6 +5,7 @@ import React from "react";
 import searchIcon from "../../images/searchIcon.svg";
 import profileIcon from "../../images/profile-icon.svg";
 import HamburgerMenu from "./HamburgerMenu";
+import { HashLink } from 'react-router-hash-link';
 
 function Header() {
   return (
@@ -21,33 +22,34 @@ function Header() {
       <nav className="mainNav">
         <ul className="navList">
           <li>
-            <a href="#patients" className="navLink">
+            <a href="/" className="navLink">
               For Patients
             </a>
           </li>
           <li>
-            <a href="#pharmacies" className="navLink">
+            <a href="/pharmacies" className="navLink">
               For Pharmacies
             </a>
           </li>
           <li>
-            <a href="#employers" className="navLink">
+            <a href="/employers" className="navLink">
               For Employers
             </a>
           </li>
-          <li>
+          {/* todo: add providers landing */}
+          {/* <li>
             <a href="#providers" className="navLink">
               For Providers
             </a>
-          </li>
+          </li> */}
         </ul>
         <h1 className="logo">AivyHealth</h1>
         <div className="rightContainer">
           <ul className="navList">
             <li>
-              <a href="#faqs" className="navLink">
+              <HashLink to="/patients#faqSection" className="navLink">
                 FAQs
-              </a>
+              </HashLink>
             </li>
             {/* todo: add back forms postlaunch */}
             {/* <li>

@@ -51,7 +51,7 @@ function FAQSection() {
   ];
 
   return (
-    <section className="faqSection">
+    <section className="faqSection" id="faqSection">
       <h2 className="faqTitle">Frequently Asked Questions</h2>
       <div className="faqGrid">
         <div className="col-1">

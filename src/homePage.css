@@ -34,6 +34,7 @@ body {
 
 button {
     border: none;
+    font-family: poppins !important;
 }
 
 h1, h2, h3, p {
@@ -176,6 +177,7 @@ h1, h2, h3, p {
 
 .introContent {
     max-width: 585px;
+    text-align: center;
 }
 
 .introTitle {
@@ -346,10 +348,6 @@ h1, h2, h3, p {
     color: #2f7089;
     font-size: 26px;
     font-weight: 500;
-}
-
-.stepIcon {
-    width: 34px;
 }
 
 .waitlistSection {
@@ -690,8 +688,12 @@ h1, h2, h3, p {
 }
 
 .faqQuestion::after {
-    content: "+";
+    content: "";
     position: absolute;
+    background-image: url('./images/expand-cross.svg');
+    background-repeat: no-repeat;
+    width: 34px;
+    height: 30px;
     right: 0;
     top: 50%;
     transform: translateY(-50%);
@@ -701,6 +703,12 @@ h1, h2, h3, p {
 
 .faqItem[open] .faqQuestion::after {
     content: "-";
+    background-image: none;
+}
+
+.step[open] .faqQuestion::after {
+    content: "-";
+    background-image: none;
 }
 
 .faqAnswer {
@@ -747,6 +755,10 @@ h1, h2, h3, p {
 
 .contactForm {
     width: 50%;
+
+    input, .formTextarea {
+        font-family: poppins !important;
+    }
 }
 
 .formRow {

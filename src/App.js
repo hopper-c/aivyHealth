@@ -10,6 +10,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<PreLaunchHomePage />} />
+          <Route path="/patients" element={<PreLaunchHomePage />} />
           <Route path="/pharmacies" element={<ForPharmacies />} />
           <Route path="/employers" element={<ForEmployers />} />
         </Routes>

@@ -8,13 +8,16 @@ import expandCross from "../../images/expand-cross.svg";
 function HowItWorks() {
   const steps = [
     {
-      title: "Choose your infusion"
+      title: "Choose your infusion",
+      answer: "Select the infusion therapy that best fits your needs, whether it's a wellness infusion or a specialty infusion prescribed by your physician and add it to your Plan Of Care."
     },
     {
-      title: "Schedule & track"
+      title: "Schedule & track",
+      answer: "Book your appointment and track your nurse in real-time as they head to your location, bringing personalized care directly to you."
     },
     {
-      title: "Receive patient-centered care"
+      title: "Receive patient-centered care",
+      answer: "Enjoy the ease and comfort of receiving your infusion at a place of your choice, knowing you're in expert hands."
     },
   ];
 
@@ -30,18 +33,19 @@ function HowItWorks() {
         service brings personalized care directly to you, wherever you are.
       </p>
       {steps.map((step, index) => (
-        <div key={index} className="step">
-          <div className="stepInfo">
+        <details key={index} className="step">
+          <summary className="faqQuestion">
             <h3 className="stepTitle">
               Step {index + 1}: {step.title}
             </h3>
-            <img
-              src={expandCross}
-              alt=""
-              className="stepIcon"
-            />
-          </div>
-        </div>
+          </summary>
+          <p className="faqAnswer">{step.answer}ndondvkndvlkdn</p>
+          {/* <img
+            src={expandCross}
+            alt=""
+            className="stepIcon"
+          /> */}
+        </details>
       ))}
     </section>
   );
