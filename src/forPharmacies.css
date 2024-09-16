@@ -6,6 +6,12 @@
     margin: 138px auto 0;
     position: relative;
     width: fit-content;
+
+    .whatWeDoImg {
+        @media (max-width: 991px) {
+            display: none;
+        }
+    }
 }
 
 .checkItem {
@@ -28,6 +34,12 @@
     right: 67px;
     top: 150px;
 
+    @media (max-width: 991px) {
+        position: relative;
+        right: unset;
+        top: unset;
+    }
+
     ul {
         padding: 0;
     }
@@ -41,11 +53,24 @@
     background: linear-gradient(0deg, #FFF 0%, #F5F5ED 100%);
     max-width: unset;
     margin: 0;
+    display: flex;
+    justify-content: center;
+
+    img {
+        width: 100%;
+    }
 }
 
 .demo-request {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     .contactForm {
         margin: 60px auto 178px;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
     }
 
     .formInput, .formTextarea {
@@ -53,6 +78,16 @@
 
         &::placeholder {
             color: black;
+        }
+
+        @media (max-width: 991px) {
+            padding: 8px;
+        }
+    }
+
+    img {
+        @media (max-width: 991px) {
+            width: 100px;
         }
     }
 }

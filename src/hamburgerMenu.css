@@ -104,7 +104,7 @@
   }
   
   /* Responsive behavior - Hide the hamburger on larger screens */
-  @media (min-width: 768px) {
+  @media (min-width: 991px) {
     .menu-icon {
       display: none;
     }

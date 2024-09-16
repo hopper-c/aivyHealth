@@ -33,10 +33,10 @@ function Footer() {
                 <a href="#about">About</a>
               </li>
               <li>
-                <a href="#pharmacies">For Pharmacies</a>
+                <a href="/pharmacies">For Pharmacies</a>
               </li>
               <li>
-                <a href="#employers">For Employers</a>
+                <a href="/employers">For Employers</a>
               </li>
               <li>
                 <a href="#careers">Careers</a>

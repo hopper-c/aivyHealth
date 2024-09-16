@@ -39,7 +39,7 @@ function HowItWorks() {
               Step {index + 1}: {step.title}
             </h3>
           </summary>
-          <p className="faqAnswer">{step.answer}ndondvkndvlkdn</p>
+          <p className="faqAnswer">{step.answer}</p>
           {/* <img
             src={expandCross}
             alt=""

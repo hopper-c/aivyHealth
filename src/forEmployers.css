@@ -89,6 +89,12 @@
         margin: 60px auto 178px;
     }
 
+    @media (max-width: 991px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .formInput,
     .formTextarea {
         background-color: #F2F2F2;
@@ -156,6 +162,10 @@
         span {
             font-size: 56px;
             margin-bottom: 26px;
+
+            @media (max-width: 991px) {
+                font-size: 42px;
+            }
         }
 
         p {
@@ -240,6 +250,10 @@
     h3 {
         color: #EEB07F;
         font-size: 20px;
+
+        @media (max-width: 991px) {
+            padding: 0 15px;
+        }
     }
 
     .results {
