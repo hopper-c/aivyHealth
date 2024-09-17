@@ -253,14 +253,41 @@ h1, h2, h3, p {
     gap: 112px;
 }
 
-.caseStudy {
+.caseStudy, .swiper {
     max-width: 475px;
     width: 100%;
+}
+
+.swiper {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
 }
 
 .caseStudyBackground {
     max-width: 475px;
     margin-bottom: -129px;
+
+    &.Adrian {
+        position: relative;
+        right: 100px;
+        max-width: unset;
+    }
+
+    &.Fatima {
+        position: relative;
+        max-width: unset;
+        margin-top: 26px;
+        margin-bottom: -68px;
+        left: 48px;
+    }
+
+    &.Kenji {
+        position: relative;
+        max-width: unset;
+        margin-bottom: -8px;
+        left: 109px;
+        margin-top: 25px;
+    }
 }
 
 .caseStudyContent {
@@ -807,6 +834,7 @@ h1, h2, h3, p {
     font-weight: 600;
     cursor: pointer;
     margin-top: 33px;
+    width: 100%;
 
     @media (max-width: 991px) {
         padding: 8px;

@@ -85,6 +85,10 @@
 }
 
 .book-consultation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     .contactForm {
         margin: 60px auto 178px;
     }
@@ -250,6 +254,7 @@
     h3 {
         color: #EEB07F;
         font-size: 20px;
+        align-self: center;
 
         @media (max-width: 991px) {
             padding: 0 15px;
@@ -266,6 +271,11 @@
             display: flex;
             flex-direction: column;
             width: 450px;
+            align-items: center;
+
+            @media (max-width: 991px) {
+                text-align: center;
+            }
         }
 
         .x-result {
