@@ -110,5 +110,16 @@
 @media (max-width: 991px) {
     .demo-request {
         padding: 0 15px;
+
+        h1 {
+            font-size: 32px;
+            margin: 0;
+
+            img {
+                width: 200px;
+                bottom: -101px;
+                left: 14px;
+            }
+        }
     }
 }
