@@ -951,10 +951,15 @@ h1, h2, h3, p {
 
 .employersCover {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     margin-top: 157px;
     margin-bottom: 100px;
     align-items: center;
+
+    .employersContent {
+        display: flex;
+    }
 
     .employersImage {
         width: 600px;
@@ -1046,6 +1051,23 @@ h1, h2, h3, p {
 
         .employerSearchContainer {
             margin-top: 30px;
+        }
+
+        .employersContent {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .employersImage {
+            width: 100%;
+        }
+
+        .hr-form-section {
+            width: unset;
+
+            input {
+                width: 76%;
+            }
         }
     }
 
@@ -1272,4 +1294,46 @@ h1, h2, h3, p {
         gap: 20px;
         margin-top: 60px;
     }
+}
+
+.hr-form-section {
+    padding: 20px;
+    max-width: 1400px;
+    width: 100%;
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 36px;
+    color: #2F7089;
+  }
+  
+  label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  p {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .submitButton {
+    padding: 10px 20px;
+    background-color: #2f7089;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
 }
