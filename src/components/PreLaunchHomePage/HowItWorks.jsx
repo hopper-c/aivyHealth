@@ -3,6 +3,7 @@
  */
 import React from "react";
 import expandCross from "../../images/expand-cross.svg";
+import aivyTextLogo from "../../images/how-it-works-text-logo.svg";
 
 
 function HowItWorks() {
@@ -24,7 +25,11 @@ function HowItWorks() {
   return (
     <section className="howItWorks">
       <span className="howItWorksTitle">
-        How <h1>AivyHealth</h1> works
+        How <img
+          src={aivyTextLogo}
+          alt="Aivy Health"
+          className="logo"
+        /> works
       </span>
       <p className="howItWorksDescription">
         At Aivy Health, we deliver on-demand infusion therapy tailored to your

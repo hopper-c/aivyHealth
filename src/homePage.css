@@ -347,7 +347,14 @@ h1, h2, h3, p {
     font-size: 56px;
     line-height: 65px;
     display: flex;
-    gap: 16px;
+    justify-content: space-between;
+    position: relative;
+
+    .logo {
+        left: 47%;
+        top: -98px;
+        max-width: unset;
+    }
 }
 
 .howItWorksDescription {

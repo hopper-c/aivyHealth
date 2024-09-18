@@ -6,6 +6,7 @@ import searchIcon from "../../images/searchIcon.svg";
 import profileIcon from "../../images/profile-icon.svg";
 import HamburgerMenu from "./HamburgerMenu";
 import { HashLink } from 'react-router-hash-link';
+import aivyTextLogo from "../../images/aivy-header-text-logo.svg"
 
 function Header() {
   return (
@@ -43,7 +44,12 @@ function Header() {
             </a>
           </li> */}
         </ul>
-        <h1 className="logo">AivyHealth</h1>
+        <img
+          src={aivyTextLogo}
+          alt="Aivy Health"
+          className="logo"
+        />
+        {/* <h1 className="logo">AivyHealth</h1> */}
         <div className="rightContainer">
           <ul className="navList">
             <li>
