@@ -5,6 +5,13 @@ import React from "react";
 
 import smilingNurse from '../../images/smiling_nurse_stock.png'
 
+const handleClick = (e) => {
+  e.preventDefault();
+
+  const mailtoLink = 'mailto:contact@example.com?subject=Aivy Health'
+  window.location.href = mailtoLink;
+};
+
 function CallToAction() {
   return (
     <section className="callToAction">
@@ -28,7 +35,7 @@ function CallToAction() {
           <button className="waitlist">
             Join the waitlist
           </button>
-          <button className="contactUs">Contact us</button>
+          <button className="contactUs" onClick={handleClick}>Contact us</button>
         </div>
       </div>
     </section>
