@@ -3,13 +3,17 @@
  */
 import React from "react";
 import AivyBig from "../../images/aivyLogoBig.svg";
-
+import aivyTextLogo from "../../images/how-it-works-text-logo.svg";
 
 function DemoRequest() {
   return (
     <section className="demo-request">
       <img src={AivyBig} alt="" />
-      <h1>Get a demo of AivyHealth</h1>
+      <h1>Get a demo of <img
+          src={aivyTextLogo}
+          alt="Aivy Health"
+          className="logo-demo-request"
+        /></h1>
       <form className="contactForm">
         <div className="formRow">
           <input
