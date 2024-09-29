@@ -254,23 +254,38 @@ h1, h2, h3, p {
 }
 
 .caseStudy, .swiper {
-    max-width: 475px;
+    /* max-width: 475px; */
+    max-width: 400px;
     width: 100%;
 }
+
+/* .caseStudy.Fatima {
+    padding-bottom: 45px;
+} */
 
 .swiper {
     margin-left: 0 !important;
     margin-right: 0 !important;
+
+    padding-bottom: 43px !important;
 }
 
 .caseStudyBackground {
-    max-width: 475px;
-    margin-bottom: -129px;
+    max-width: 100%;
+    margin-bottom: -28%;
 
     &.Adrian {
         position: relative;
         right: 100px;
         max-width: unset;
+
+        @media (max-width: 991px) {
+            position: relative;
+            right: 47px;
+            max-width: 125%;
+            margin-bottom: -21% !important;
+            margin-top: 20px;
+        }
     }
 
     &.Fatima {
@@ -297,6 +312,11 @@ h1, h2, h3, p {
     padding: 26px 29px;
     border-radius: 25px;
     text-align: left;
+    height: 531px;
+
+    @media (max-width: 991px) {
+        height: 600px;
+    }
 }
 
 .caseStudyTitle {
@@ -305,6 +325,10 @@ h1, h2, h3, p {
     font-weight: 600;
     text-align: center;
     margin-bottom: 18px;
+
+    @media (max-width: 991px) {
+        font-size: 26px;
+    }
 }
 
 .caseStudyComplaint,
@@ -1340,4 +1364,35 @@ h1, h2, h3, p {
     border-radius: 5px;
     cursor: pointer;
   }
+}
+
+.swiper-button-prev, 
+.swiper-button-next {
+    &.disabled {
+        display: none;
+    }
+
+    color: black !important;
+}
+
+.caseStudyContainer {
+    position: relative;
+
+    @media (max-width: 991px) {
+        width: 100%;
+    }
+}
+
+.swiper-button-next {
+    top: 64% !important;
+    left: 500px !important;
+}
+
+.swiper-button-prev {
+    top: 64% !important;
+    left: -50px !important;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #2F7089 !important;
 }

@@ -11,9 +11,16 @@ import bagDollar from "../../images/bag-dollar.svg";
 import capsule from "../../images/capsule.svg";
 import piggyBank from "../../images/piggy-bank.svg";
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination } from 'swiper/modules';
+
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 import 'swiper/css';
 
 function CaseStudy() {
+  const swiperRef = React.useRef(null); // Ref for Swiper instance
+  const [isBeginning, setIsBeginning] = React.useState(true); // State to track beginning
+  const [isEnd, setIsEnd] = React.useState(false); // State to track end
   const caseStudies = [
     {
       name: "Irene",
@@ -65,77 +72,89 @@ function CaseStudy() {
     }
   ];
 
+  const goNext = () => {
+    if (swiperRef.current && swiperRef.current.swiper) {
+      swiperRef.current.swiper.slideNext();
+    }
+  };
+
+  const goPrev = () => {
+    if (swiperRef.current && swiperRef.current.swiper) {
+      swiperRef.current.swiper.slidePrev();
+    }
+  };
+
   return (
-    <Swiper
-      spaceBetween={50}
-      slidesPerView={1}
-      onSlideChange={() => console.log('slide change')}
-      onSwiper={(swiper) => console.log(swiper)}
-    >
-    {caseStudies.map((study, index) => (
-      <SwiperSlide>
-      <article className="caseStudy">
-        <img
-          src={study.image}
-          alt=""
-          className={'caseStudyBackground' + ' ' + study.name}
-        />
-        <div className="caseStudyContent">
-          <h2 className="caseStudyTitle">{study.name}'s Aivy Journey</h2>
-          <p className="caseStudyComplaint">
-            <strong>Complaint:</strong> {study.complaint}
-          </p>
-          <h3 className="interventionsTitle">Aivy Interventions:</h3>
-          <ul className="interventionsList">
-            <li className="interventionItem">
+    <div className="caseStudyContainer">
+      <Swiper
+        ref={swiperRef}
+        spaceBetween={50}
+        slidesPerView={1}
+        pagination={{ clickable: true }}
+        modules={[Navigation, Pagination]}
+        onSlideChange={(swiper) => {
+          // Update state based on swiper's progress
+          setIsBeginning(swiper.isBeginning);
+          setIsEnd(swiper.isEnd);
+        }}
+        onSwiper={(swiper) => {
+          setIsBeginning(swiper.isBeginning);
+          setIsEnd(swiper.isEnd);
+        }}
+      >
+        {caseStudies.map((study, index) => (
+          <SwiperSlide key={index}>
+            <article className={"caseStudy " + study.name}>
               <img
-                src={medicalBag}
-                alt=""
-                className="interventionIcon"
+                src={study.image}
+                alt={study.name}
+                className={"caseStudyBackground " + study.name}
               />
-              <p>
-                <strong>Preventive Care:</strong> {study.interventions[0].description}
-              </p>
-            </li>
-            <li className="interventionItem">
-              <img
-                src={capsule}
-                alt=""
-                className="interventionIcon"
-              />
-              <p>
-                <strong>Acute Relief:</strong> {study.interventions[1].description}
-              </p>
-            </li>
-            <li className="interventionItem">
-              <img
-                src={bagDollar}
-                alt=""
-                className="interventionIcon"
-              />
-              <p>
-                <strong>Affordable Options:</strong> {study.interventions[2].description}
-              </p>
-            </li>
-            <li className="interventionItem">
-              <img
-                src={piggyBank}
-                alt=""
-                className="interventionIcon"
-              />
-              <p>
-                <strong>Cost-Effective:</strong> {study.interventions[3].description}
-              </p>
-            </li>
-          </ul>
-          <p className="caseStudyOutcome">
-            <strong>Outcome:</strong> {study.outcome}
-          </p>
-        </div>
-      </article>
-      </SwiperSlide>
-    ))}
-    </Swiper>
+              <div className="caseStudyContent">
+                <h2 className="caseStudyTitle">{study.name}'s Aivy Journey</h2>
+                <p className="caseStudyComplaint">
+                  <strong>Complaint:</strong> {study.complaint}
+                </p>
+                <h3 className="interventionsTitle">Aivy Interventions:</h3>
+                <ul className="interventionsList">
+                  {study.interventions.map((intervention, i) => (
+                    <li className="interventionItem" key={i}>
+                      <img
+                        src={intervention.icon}
+                        alt={intervention.title}
+                        className="interventionIcon"
+                      />
+                      <p>
+                        <strong>{intervention.title}:</strong> {intervention.description}
+                      </p>
+                    </li>
+                  ))}
+                </ul>
+                <p className="caseStudyOutcome">
+                  <strong>Outcome:</strong> {study.outcome}
+                </p>
+              </div>
+            </article>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+
+      {/* Custom Navigation Arrows */}
+      <div className="swiper-navigation">
+        <button
+          onClick={goPrev}
+          className={isBeginning ? "disabled swiper-button-prev" : "swiper-button-prev"}
+          disabled={isBeginning} // Disable if at the beginning
+        >
+        </button>
+        <button
+          onClick={goNext}
+          className={isEnd ? "disabled swiper-button-next" : "swiper-button-next"}
+          disabled={isEnd} // Disable if at the end
+        >
+        </button>
+      </div>
+    </div>
   );
 }
 
