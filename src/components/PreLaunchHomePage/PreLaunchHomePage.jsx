@@ -23,14 +23,21 @@ function PreLaunchHomePage() {
       <Header />
       <IntroSection />
       <section className="caseStudySection">
-        <CaseStudy />
+        <div className="d-none d-md-block">
+          <CaseStudy />
+        </div>
         <HowItWorks />
       </section>
       <WhatWeTreat />
-      <WaitlistSection />
+      <div className="d-none d-md-block">
+        <WaitlistSection />
+      </div>
       <div className="gradient-container">
         <FeatureHighlights />
         <Testimonial />
+        <div className="d-md-none d-block caseStudySection">
+          <CaseStudy />
+        </div>
         <CallToAction />
         <EmployersCover />
       </div>

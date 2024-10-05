@@ -12,10 +12,8 @@ function IntroSection() {
           On-demand infusions for a healthier you
         </h1>
         <p className="introDescription">
-          We integrate wellness and specialty infusions into one service. Our
-          approach increases access to necessary treatments, significantly
-          reduces patient wait times, and offers a more efficient,
-          patient-centric solution.
+          We integrate wellness and specialty infusions into one service.
+          Our approach increases access to treatments, reduces patient wait times, and offers a more efficient, patient-centric solution.
         </p>
         <div className="introCta">
           <button className="joinWaitlistButton">Join the waitlist</button>

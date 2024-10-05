@@ -70,7 +70,7 @@ h1, h2, h3, p {
     align-items: center;
     justify-content: flex-end;
     gap: 25px;
-    height: 46px;
+    height: 100%;
     padding: 22px 33px 22px 33px;
 }
 
@@ -204,12 +204,26 @@ h1, h2, h3, p {
 }
 
 .typeWriter {
-    width: 680px;
+    width: 709px;
     text-align: left;
     background: #71B4C31A;
     border-radius: 22px;
     padding: 20px;
-    min-height: 86px;
+    min-height: 124px;
+}
+
+.learn-more-typewriter {
+    font-size: 16px;
+    display: flex;
+    width: 80%;
+    margin-left: 25px;
+    margin-top: 14px;
+
+    @media (max-width: 991px) {
+        font-size: 12px;
+        font-weight: 400;
+        margin-left: unset;
+    }
 }
 
 .treatmentButton,
@@ -390,12 +404,16 @@ h1, h2, h3, p {
 }
 
 .step {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #989898;
     padding: 45px 15px;
 
     &:first-of-type {
-        border-top: 1px solid black;
+        border-top: 1px solid #989898;
         margin-top: 20px;
+    }
+
+    @media (max-width: 991px) {
+        padding: 28px 12px;
     }
 }
 
@@ -493,6 +511,13 @@ h1, h2, h3, p {
     font-size: 56px;
     font-weight: 500;
     text-align: center;
+
+    @media (max-width: 991px) {
+        font-size: 32px;
+        width: 300px;
+        margin: auto;
+        line-height: 100%;
+    }
 }
 
 .featureDescription {
@@ -502,6 +527,11 @@ h1, h2, h3, p {
     text-align: center;
     max-width: 1200px;
     margin: 17px auto 30px;
+
+    @media (max-width: 991px) {
+        font-size: 14px;
+        line-height: 20px;
+    }
 }
 
 .featureGrid {
@@ -524,12 +554,23 @@ h1, h2, h3, p {
     font-size: 26px;
     font-weight: 500;
     margin-bottom: 15px;
+
+    @media (max-width: 991px) {
+        font-size: 22px;
+        line-height: 22px;
+        margin-bottom: 8px;
+    }
 }
 
 .featureCardDescription {
     color: #000;
     font-size: 16px;
     line-height: 1.5;
+
+    @media (max-width: 991px) {
+        font-size: 12px;
+        line-height: 22px;
+    }
 }
 
 .testimonial {
@@ -971,6 +1012,10 @@ h1, h2, h3, p {
     justify-content: center;
     align-items: center;
     margin-top: 113px;
+
+    .whatWeTreatLabel {
+        margin-bottom: 43px;
+    }
 }
 
 .employersContent {
@@ -1042,21 +1087,25 @@ h1, h2, h3, p {
 }
 
 @media (max-width: 991px) {
-    .header {
-        /* padding: 22px 20px; */
+    .introCta {
+        margin-top: 25px;
+        margin-bottom: 40px;
     }
 
     .howItWorksDescription {
-        text-align: center;
+        text-align: left;
+        font-size: 14px;
+        line-height: 20px;
     }
 
     .stepTitle {
-        font-size: 24px;
+        font-size: 14px;
         text-align: left;
     }
 
     .hamburgerContainer {
         display: block;
+        align-content: center;
     }
 
     .callToAction {
@@ -1064,6 +1113,7 @@ h1, h2, h3, p {
         flex-direction: column;
         gap: 50px;
         margin: 0 15px;
+        display: none;
 
         .flexRow {
             justify-content: center;
@@ -1074,7 +1124,7 @@ h1, h2, h3, p {
         flex-direction: column;
 
         .employersTextContainer {
-            padding: 0 15px;
+            padding: 0 25px;
         }
 
         .employerSearchContainer {
@@ -1108,17 +1158,32 @@ h1, h2, h3, p {
     }
 
     .faqTitle {
-        padding: 0 15px;
+        padding: 0 25px;
         font-size: 40px;
     }
 
+    .menu-icon {
+        position: relative !important;
+        top: unset !important;
+        left: unset !important;
+    }
+
+    .header {
+        display: flex;
+        justify-content: flex-end;
+        padding: 0 15px;
+    }
+
     .topMenu {
-        padding: 22px 15px 22px 15px;
+        padding: 22px 25px 22px 25px;
+        justify-content: unset;
     }
 
     .testimonialText {
-        font-size: 16px;
-        padding: 0 16px;
+        font-size: 14px;
+        padding: 0 25px;
+        font-weight: 500;
+        line-height: 30px;
     }
 
     .testimonialQuote {
@@ -1128,14 +1193,14 @@ h1, h2, h3, p {
     .roi-container {
         .text-container {
             justify-content: flex-start;
-            padding: 0 15px;
+            padding: 0 25px;
         }
 
         flex-direction: column;
         max-width: 100% !important;
 
         .roi-calculator {
-            padding: 0 15px !important;
+            padding: 0 25px !important;
             width: -webkit-fill-available !important;
         }
     }
@@ -1152,12 +1217,12 @@ h1, h2, h3, p {
         }
 
         .results {
-            padding: 0 15px;
+            padding: 0 25px;
         }
     }
 
     .book-consultation {
-        padding: 0 15px;
+        padding: 0 25px;
     }
 
     .mainNav {
@@ -1176,22 +1241,26 @@ h1, h2, h3, p {
     .whatWeTreatContainer {
         gap: 15px;
         margin-top: 42px;
-        padding: 0 20px;
+        padding: 0 25px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 56px;
 
-        span {
-            font-size: 19px;
+        span:not(.learn-more-typewriter) {
+            font-size: 32px;
             text-align: left;
             font-weight: 500;
         }
     }
 
     .typeWriter {
-        width: 250px;
-        padding: 5px 15px;
-        min-height: 29px;
+        width: 100%;
+        padding: 5px 25px;
+        min-height: 46px;
         align-content: center;
         font-size: 19px;
         font-weight: 500;
+        border-radius: 9px;
     }
 
     .ourServices {
@@ -1235,8 +1304,27 @@ h1, h2, h3, p {
     }
 
     .introSection {
-        flex-direction: column;
-        padding: 43px 20px;
+        flex-direction: column-reverse;
+        padding: 0px 25px;
+        gap: 40px;
+
+        h1 {
+            font-size: 32px;
+            line-height: 40px;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        .introContent {
+            text-align: -webkit-center;
+
+            .introTitle {
+                max-width: 69%;
+            }
+        }
     }
 
     .introTitle {
@@ -1245,9 +1333,10 @@ h1, h2, h3, p {
     }
 
     .caseStudySection {
-        padding: 60px 20px;
+        padding: 0 25px 60px 25px;
         flex-direction: column;
         align-items: center;
+        background-color: unset;
     }
 
     .howItWorks {
@@ -1260,16 +1349,16 @@ h1, h2, h3, p {
     .howItWorksTitle {
         font-size: 32px;
         line-height: 52px;
-        justify-content: center;
+        justify-content: space-between;
         gap: 210px;
     }
 
     .waitlistSection {
-        padding: 100px 20px;
+        padding: 100px 25px;
     }
 
     .featureHighlights {
-        padding: 60px 20px;
+        padding: 60px 25px;
     }
 
     .treatmentGrid {
@@ -1293,7 +1382,7 @@ h1, h2, h3, p {
 
     .contactSection {
         flex-direction: column;
-        padding: 60px 20px;
+        padding: 60px 25px;
     }
 
     .contactForm {
@@ -1302,7 +1391,7 @@ h1, h2, h3, p {
     }
 
     .footer {
-        padding: 60px 20px 8px 20px;
+        padding: 60px 25px 8px 25px;
     }
 
     .footerContent {

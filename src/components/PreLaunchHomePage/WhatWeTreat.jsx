@@ -45,8 +45,14 @@ function WhatWeTreat() {
   return (
     <section className="whatWeTreat">
       <div className="whatWeTreatContainer">
-        <span>What we treat:</span>
-        <p className="typeWriter" id="typeWriter"></p>
+        <span className="d-none d-md-block whatWeTreatLabel">What we treat:</span>
+        <span className="d-md-none">What we treat</span>
+        <div className="flex-column">
+          <p className="typeWriter" id="typeWriter"></p>
+          <span className="learn-more-typewriter">
+            We address both everyday wellness and complex medical conditions with patient-focused care. Learn more.
+          </span>
+        </div>
       </div>
     </section>
   );
