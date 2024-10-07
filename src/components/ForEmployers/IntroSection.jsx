@@ -15,7 +15,7 @@ function IntroSection() {
           Increase productivity and cut costs with a wellness benefit that sets your company apart.
         </p>
         <div className="introCta">
-          <button className="joinWaitlistButton">Get Started Today</button>
+          <button className="joinWaitlistButton" href="https://forms.gle/your-google-form-link" target="_blank">Get Started Today</button>
         </div>
       </div>
       <img

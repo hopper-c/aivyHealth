@@ -287,35 +287,60 @@ h1, h2, h3, p {
 .caseStudyBackground {
     max-width: 100%;
     margin-bottom: -28%;
+    position: absolute;
+    top: 0;
+
+    &.Irene {
+        top: 75px;
+    }
 
     &.Adrian {
-        position: relative;
-        right: 100px;
-        max-width: unset;
+        /* position: relative; */
+        right: -104px;
+        max-width: 600px;
+        top: 61px;
 
         @media (max-width: 991px) {
-            position: relative;
-            right: 47px;
+            /* position: relative; */
+            /* right: 47px; */
             max-width: 125%;
             margin-bottom: -21% !important;
             margin-top: 20px;
+            right: -45px;
+            top: 82px;
         }
     }
 
     &.Fatima {
-        position: relative;
+        /* position: relative; */
         max-width: unset;
-        margin-top: 26px;
-        margin-bottom: -68px;
-        left: 48px;
+        /* margin-top: 26px;
+        margin-bottom: -68px; */
+        left: 0px;
+        top: 79px;
+
+        @media (max-width: 991px) {
+            max-width: 300px;
+            /* margin-bottom: -8px; */
+            left: 45px;
+            top: 113px;
+        }
     }
 
     &.Kenji {
-        position: relative;
+        /* position: relative; */
         max-width: unset;
-        margin-bottom: -8px;
-        left: 109px;
-        margin-top: 25px;
+        /* margin-bottom: -8px; */
+        left: 81px;
+        top: 52px;
+
+        @media (max-width: 991px) {
+            max-width: 250px;
+            /* margin-bottom: -8px; */
+            left: 81px;
+            top: 93px;
+        }
+        /* margin-top: 25px; */
     }
 }
 
@@ -326,10 +351,18 @@ h1, h2, h3, p {
     padding: 26px 29px;
     border-radius: 25px;
     text-align: left;
-    height: 531px;
+    margin-top: 300px;
+    /* height: 531px; */
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+
+    hr {
+        margin: 0;
+    }
 
     @media (max-width: 991px) {
-        height: 600px;
+        /* height: 600px; */
     }
 }
 
@@ -338,10 +371,9 @@ h1, h2, h3, p {
     font-size: 30px;
     font-weight: 600;
     text-align: center;
-    margin-bottom: 18px;
 
     @media (max-width: 991px) {
-        font-size: 26px;
+        font-size: 20px;
     }
 }
 
@@ -350,11 +382,21 @@ h1, h2, h3, p {
 .caseStudyOutcome {
     font-size: 14px;
     line-height: 18px;
+
+    @media (max-width: 991px) {
+        font-size: 12px;
+    }
+}
+
+.interventionsTitle {
+    font-size: 12px;
+    font-weight: 700;
 }
 
 .interventionsList {
     list-style-type: none;
     padding: 0;
+    margin-bottom: 0px;
 }
 
 .interventionItem {
@@ -793,28 +835,54 @@ h1, h2, h3, p {
     text-align: left;
 }
 
-.faqQuestion::after {
-    content: "";
-    position: absolute;
-    background-image: url('./images/expand-cross.svg');
-    background-repeat: no-repeat;
-    width: 34px;
-    height: 30px;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 30px;
-    color: #2f7089;
+.faqQuestion {
+    font-size: 14px;
+
+    @media (max-width: 991px) {
+        &::after {
+            width: 18px !important;
+            height: 16px !important;
+            background-image: url('./images/expand-cross-mobile.svg') !important;
+        }
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        background-image: url('./images/expand-cross.svg');
+        background-repeat: no-repeat;
+        width: 34px;
+        height: 30px;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 30px;
+        color: #2f7089;
+    }
 }
 
-.faqItem[open] .faqQuestion::after {
+/* .faqItem[open] .faqQuestion::after {
     content: "-";
     background-image: none;
-}
+} */
 
-.step[open] .faqQuestion::after {
-    content: "-";
-    background-image: none;
+.step[open], .faqItem[open] .faqQuestion {
+    @media (max-width: 991px) {
+        &::after {
+            top: -1px !important;
+            font-size: 22px !important;
+            width: 16px !important;
+        }
+    }
+
+    &::after {
+        content: "-";
+        background-image: none !important;
+        color: #727272;
+        font-size: 34px;
+        top: 5px;
+        width: 25px;
+    }
 }
 
 .faqAnswer {
@@ -823,6 +891,10 @@ h1, h2, h3, p {
     font-size: 16px;
     line-height: 1.5;
     text-align: left;
+
+    @media (max-width: 991px) {
+        font-size: 12px;
+    }
 }
 
 .contactSection {
@@ -843,6 +915,29 @@ h1, h2, h3, p {
     font-size: 46px;
     font-weight: 600;
     margin-bottom: 12px;
+
+    @media (max-width: 991px) {
+        font-size: 32px;
+        font-weight: 400;
+        text-align: center;
+    }
+}
+
+.contact-body {
+    font-size: 14px;
+    text-align: center;
+}
+
+.contactSection .joinButton {
+    border-radius: 22px;
+    padding: 9px 19px;
+    color: #fff;
+    height: 100%;
+    font-size: 16px;
+    background-color: #2f7089;
+    width: fit-content;
+    align-self: center;
+    margin-top: 20px;
 }
 
 .contactDescription {
@@ -916,8 +1011,9 @@ h1, h2, h3, p {
 
 .footer {
     background-color: #71b4c3;
-    padding: 60px 80px 8px;
+    padding: 56px 80px 70px;
     color: #09051c;
+    position: relative;
 }
 
 .footerContent {
@@ -934,6 +1030,15 @@ h1, h2, h3, p {
     width: 75px;
     margin-left: -20px;
     margin-bottom: 20px;
+
+    @media (max-width: 991px) {
+        position: absolute;
+        top: -94px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 180px;
+    }
 }
 
 .missionTitle {
@@ -941,12 +1046,20 @@ h1, h2, h3, p {
     font-size: 18px;
     font-weight: 500;
     margin-bottom: 14px;
+
+    @media (max-width: 991px) {
+        font-size: 14px;
+    }
 }
 
 .missionDescription {
     font-size: 16px;
     line-height: 1.5;
     text-align: left;
+
+    @media (max-width: 991px) {
+        font-size: 14px;
+    }
 }
 
 .footerNav {
@@ -959,6 +1072,11 @@ h1, h2, h3, p {
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 18px;
+
+    @media (max-width: 991px) {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
 }
 
 .footerNavList {
@@ -974,6 +1092,10 @@ h1, h2, h3, p {
     color: #09051c;
     text-decoration: none;
     font-size: 16px;
+
+    @media (max-width: 991px) {
+        font-size: 14px;
+    }
 }
 
 .footerBottom {
@@ -981,6 +1103,10 @@ h1, h2, h3, p {
     justify-content: space-between;
     margin-top: 135px;
     font-size: 16px;
+
+    @media (max-width: 991px) {
+        font-size: 14px;
+    }
 }
 
 .legalLinks {
@@ -1058,6 +1184,10 @@ h1, h2, h3, p {
     }
 }
 
+.footerNavContainer {
+    gap: 100px;
+}
+
 .employerSearchContainer {
     margin-top: 23px;
 
@@ -1125,10 +1255,28 @@ h1, h2, h3, p {
 
         .employersTextContainer {
             padding: 0 25px;
+
+            h2 {
+                font-size: 32px;
+            }
+
+            span {
+                font-size: 14px;
+            }
         }
 
         .employerSearchContainer {
             margin-top: 30px;
+            
+            .searchInput {
+                height: 45px;
+                border-radius: 22px;
+            }
+
+            .submitButton {
+                height: 45px;
+                line-height: 16px;
+            }
         }
 
         .employersContent {
@@ -1159,7 +1307,7 @@ h1, h2, h3, p {
 
     .faqTitle {
         padding: 0 25px;
-        font-size: 40px;
+        font-size: 32px;
     }
 
     .menu-icon {
@@ -1382,7 +1530,7 @@ h1, h2, h3, p {
 
     .contactSection {
         flex-direction: column;
-        padding: 60px 25px;
+        padding: 60px 25px 120px 25px;
     }
 
     .contactForm {
@@ -1400,9 +1548,17 @@ h1, h2, h3, p {
 
     .footerNav {
         flex-direction: column;
-        gap: 0px;
-        margin-top: 40px;
+        gap: 36px;
+        margin-top: 36px;
         text-align: left;
+    }
+
+    .footerNavContainer {
+        gap: 58px;
+    }
+
+    .contact-email {
+        font-size: 14px;
     }
 
     .footerBottom {
@@ -1473,15 +1629,29 @@ h1, h2, h3, p {
 }
 
 .swiper-button-next {
-    top: 64% !important;
-    left: 500px !important;
+    top: 185px !important;
+    right: -11px !important;
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 50px !important;
+
+    &::after {
+        font-size: 22px !important;
+    }
 }
 
 .swiper-button-prev {
-    top: 64% !important;
-    left: -50px !important;
+    top: 185px !important;
+    left: -11px !important;
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 50px !important;
+
+    &::after {
+        font-size: 22px !important;
+    }
 }
 
-.swiper-pagination-bullet-active {
+/* .swiper-pagination-bullet-active {
     background-color: #2F7089 !important;
-}
+} */

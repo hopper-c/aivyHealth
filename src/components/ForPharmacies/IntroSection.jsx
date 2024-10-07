@@ -15,7 +15,7 @@ function IntroSection() {
           We handle your staffing and logistics to deliver timely, high-quality infusions directly to patients' homes.
         </p>
         <div className="introCta">
-          <button className="joinWaitlistButton">Get Started Today</button>
+          <button className="joinWaitlistButton" href="https://forms.gle/your-google-form-link" target="_blank">Get Started Today</button>
         </div>
       </div>
       <img

@@ -105,7 +105,7 @@ function EmployersCover() {
         <div className="employersTextContainer">
           <h2>Employers cover Aivy Health</h2>
           <span>
-            Your company may be covering the cost of Aivy Health for employees and their families. Aivy Health offers personalized infusion therapy, including on-demand wellness and urgent care infusions, specialty treatments, and 1:1 telehealth consultations. Our services are designed to make infusion therapy easy, accessible, and personalized for every patient. Search below to see if your employer covers Aivy Health.
+            <b>Your company may be covering the cost of Aivy Health for employees and their families.</b> Aivy Health offers personalized infusion therapy, including on-demand wellness and urgent care infusions, specialty treatments, and 1:1 telehealth consultations. Our services are designed to make infusion therapy easy, accessible, and personalized for every patient. Search below to see if your employer covers Aivy Health.
           </span>
           <span>
             If you don’t find your employer listed, you can sign up for a membership independently here.

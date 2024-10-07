@@ -29,7 +29,7 @@ function WaitlistSection() {
             className="emailInput"
             aria-label="Enter your email address"
           />
-          <button type="submit" className="submitButton">
+          <button type="submit" className="submitButton" href="https://forms.gle/your-google-form-link" target="_blank">
             Send
           </button>
         </form>

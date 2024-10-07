@@ -14,7 +14,7 @@ function Header() {
       <div className="topMenu">
         {/* todo: add back login and appointmentButton post launch */}
         {/* <div className="login">Login</div> */}
-        <button className="joinButton">Join the waitlist</button>
+        <button className="joinButton" href="https://forms.gle/your-google-form-link" target="_blank">Join the waitlist</button>
         {/* <button className="appointmentButton">
           Request an Appointment
         </button> */}

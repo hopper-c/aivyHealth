@@ -16,7 +16,7 @@ function IntroSection() {
           Our approach increases access to treatments, reduces patient wait times, and offers a more efficient, patient-centric solution.
         </p>
         <div className="introCta">
-          <button className="joinWaitlistButton">Join the waitlist</button>
+          <button className="joinWaitlistButton" href="https://forms.gle/your-google-form-link" target="_blank">Join the waitlist</button>
           <button className="treatmentButton">
             What we treat
           </button>

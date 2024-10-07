@@ -31,7 +31,8 @@ function ContactForm() {
   };
 
   return (
-    <section className="contactSection">
+    <>
+    <section className="contactSection d-none d-md-flex">
       <div className="contactInfo">
         <h2 className="contactTitle">Still have questions?</h2>
         <p className="contactDescription">
@@ -129,6 +130,12 @@ function ContactForm() {
         </button>
       </form>
     </section>
+    <section className="contactSection d-flex d-md-none">
+      <h2 className="contactTitle">Still have questions?</h2>
+      <span className="contact-body">Contact us to explore more ways we can help you achieve health.</span>
+      <button className="joinButton" href="https://forms.gle/your-google-form-link" target="_blank">Join the waitlist</button>
+    </section>
+    </>
   );
 }
 

@@ -32,7 +32,7 @@ function CallToAction() {
           className="ctaBackground}
         /> */}
         <div className="ctaButtons">
-          <button className="waitlist">
+          <button className="waitlist" href="https://forms.gle/your-google-form-link" target="_blank">
             Join the waitlist
           </button>
           <button className="contactUs" onClick={handleClick}>Contact us</button>
