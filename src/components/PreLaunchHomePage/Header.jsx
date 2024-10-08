@@ -57,7 +57,7 @@ function Header() {
         />
         {/* <h1 className="logo">AivyHealth</h1> */}
         <div className="rightContainer">
-          <ul className="navList">
+          <ul className="navList m-0">
             <li>
               <HashLink to="/patients#faqSection" className="navLink">
                 FAQs

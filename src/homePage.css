@@ -114,6 +114,8 @@ h1, h2, h3, p {
     background-color: #EEB07F;
     border-radius: 14.286px;
     border: 0.893px solid #F5F5ED;
+    color: #000;
+    text-align: center;
 }
 
 .mainNav {
@@ -121,7 +123,7 @@ h1, h2, h3, p {
     align-items: center;
     justify-content: space-between;
     background: white;
-    padding: 0 43px 22px 43px;
+    padding: 20px 43px 22px 43px;
 }
 
 .navList {
@@ -539,6 +541,10 @@ h1, h2, h3, p {
     background-color: rgba(242, 242, 242, 0.5);
     border-radius: 22px;
     /* padding: 5px; */
+
+    .submitButton {
+        align-content: center;
+    }
 }
 
 .emailInput {
@@ -642,6 +648,10 @@ h1, h2, h3, p {
     text-align: center;
     padding: 60px 0;
     /* background-color: #f5f5ed; */
+
+    @media (max-width: 991px) {
+        padding: 60px 0 0;
+    }
 }
 
 .gradient-container {
@@ -891,22 +901,25 @@ summary::-webkit-details-marker {
     background-image: none;
 } */
 
-.step[open], .faqItem[open] .faqQuestion {
-    @media (max-width: 991px) {
-        &::after {
-            top: -1px !important;
-            font-size: 22px !important;
-            width: 16px !important;
+.step[open], 
+.faqItem[open] {
+    .faqQuestion {
+        @media (max-width: 991px) {
+            &::after {
+                top: -1px !important;
+                font-size: 22px !important;
+                width: 16px !important;
+            }
         }
-    }
 
-    &::after {
-        content: "-";
-        background-image: none !important;
-        color: #727272;
-        font-size: 34px;
-        top: 5px;
-        width: 25px;
+        &::after {
+            content: "-";
+            background-image: none !important;
+            color: #727272;
+            font-size: 34px;
+            top: 5px;
+            width: 25px;
+        }
     }
 }
 
@@ -1165,7 +1178,7 @@ summary::-webkit-details-marker {
     margin-top: 113px;
 
     .whatWeTreatLabel {
-        margin-bottom: 43px;
+        margin-bottom: 61px;
     }
 }
 

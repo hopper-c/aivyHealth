@@ -3,6 +3,7 @@
  */
 import React from "react";
 import footerLogo from "../../images/footerLogo.svg";
+import instagramLogo from "../../images/instagram.svg";
 
 function Footer() {
   return (
@@ -60,6 +61,11 @@ function Footer() {
                 </li>
               </ul>
               <h4 className="footerNavTitle">Follow Us</h4>
+              <img
+                src={instagramLogo}
+                alt="Instagram Logo"
+                className="instaLogo d-block"
+              />
             </div>
           </div>
           <div className="footerNavColumn d-block d-md-none">
