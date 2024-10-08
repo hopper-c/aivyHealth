@@ -7,12 +7,13 @@ import profileIcon from "../../images/profile-icon.svg";
 import HamburgerMenu from "./HamburgerMenu";
 import { HashLink } from 'react-router-hash-link';
 import aivyTextLogo from "../../images/aivy-header-text-logo.svg"
+import aivyTextLogoTrans from "../../images/aivyLogoTransparent.svg"
 
 function Header() {
   return (
     <header className="header">
       <img
-        src={aivyTextLogo}
+        src={aivyTextLogoTrans}
         alt="Aivy Health"
         className="logo d-block d-md-none"
       />

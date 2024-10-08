@@ -90,6 +90,12 @@ h1, h2, h3, p {
         background-color: #2f7089;
     }
 
+    .joinButton {
+        height: 27px;
+        line-height: 10px;
+        font-size: 12px;
+    }
+
     .appointmentButton {
         background-color: #fff;
         color: #09051c;
@@ -133,6 +139,16 @@ h1, h2, h3, p {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.header .logo {
+    @media (max-width: 991px) {
+        position: relative;
+        left: unset;
+        transform: unset;
+        top: 12px;
+        margin-right: auto;
+    }
 }
 
 .searchForm {
@@ -1252,6 +1268,7 @@ h1, h2, h3, p {
 
     .employersCover {
         flex-direction: column;
+        margin-top: 0;
 
         .employersTextContainer {
             padding: 0 25px;
@@ -1320,6 +1337,7 @@ h1, h2, h3, p {
         display: flex;
         justify-content: flex-end;
         padding: 0 15px;
+        align-items: center;
     }
 
     .topMenu {
