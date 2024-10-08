@@ -11,10 +11,15 @@ import aivyTextLogo from "../../images/aivy-header-text-logo.svg"
 function Header() {
   return (
     <header className="header">
+      <img
+        src={aivyTextLogo}
+        alt="Aivy Health"
+        className="logo d-block d-md-none"
+      />
       <div className="topMenu">
         {/* todo: add back login and appointmentButton post launch */}
         {/* <div className="login">Login</div> */}
-        <button className="joinButton" href="https://forms.gle/your-google-form-link" target="_blank">Join the waitlist</button>
+        <a className="joinButton" href="https://docs.google.com/forms/d/e/1FAIpQLSfN2KYoAu1_UTwnemUDbIgfh20xzRCfo_SbkRA_kZ_Zeb3vsw/viewform" target="_blank">Join the waitlist</a>
         {/* <button className="appointmentButton">
           Request an Appointment
         </button> */}

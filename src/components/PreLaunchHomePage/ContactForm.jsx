@@ -133,7 +133,7 @@ function ContactForm() {
     <section className="contactSection d-flex d-md-none">
       <h2 className="contactTitle">Still have questions?</h2>
       <span className="contact-body">Contact us to explore more ways we can help you achieve health.</span>
-      <button className="joinButton" href="https://forms.gle/your-google-form-link" target="_blank">Join the waitlist</button>
+      <a className="joinButton" href="https://docs.google.com/forms/d/e/1FAIpQLSfN2KYoAu1_UTwnemUDbIgfh20xzRCfo_SbkRA_kZ_Zeb3vsw/viewform" target="_blank">Join the waitlist</a>
     </section>
     </>
   );
