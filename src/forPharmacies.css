@@ -123,7 +123,23 @@
 
 @media (max-width: 991px) {
     .demo-request {
-        padding: 0 15px;
+        background-color: #f5f5ed;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 60px 25px 120px 25px;
+
+        .joinButton {
+            border-radius: 22px;
+            padding: 9px 19px;
+            color: #fff;
+            height: 100%;
+            font-size: 16px;
+            background-color: #2f7089;
+            width: fit-content;
+            align-self: center;
+            margin-top: 20px;
+        }
 
         h1 {
             font-size: 32px;

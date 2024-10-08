@@ -91,9 +91,11 @@ h1, h2, h3, p {
     }
 
     .joinButton {
-        height: 27px;
-        line-height: 10px;
-        font-size: 12px;
+        @media (max-width: 991px) {
+            height: 27px;
+            line-height: 10px;
+            font-size: 12px;
+        }
     }
 
     .appointmentButton {
