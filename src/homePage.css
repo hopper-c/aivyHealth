@@ -669,7 +669,7 @@ h1, h2, h3, p {
 
 .testimonialImage {
     width: 242px;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     overflow: unset;
 }
 
