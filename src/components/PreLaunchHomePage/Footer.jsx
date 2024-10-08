@@ -61,11 +61,13 @@ function Footer() {
                 </li>
               </ul>
               <h4 className="footerNavTitle">Follow Us</h4>
-              <img
-                src={instagramLogo}
-                alt="Instagram Logo"
-                className="instaLogo d-block"
-              />
+              <a href="https://www.instagram.com/aivyhealth/" target="_blank">
+                <img
+                  src={instagramLogo}
+                  alt="Instagram Logo"
+                  className="instaLogo d-block"
+                />
+              </a>
             </div>
           </div>
           <div className="footerNavColumn d-block d-md-none">

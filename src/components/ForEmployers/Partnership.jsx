@@ -3,12 +3,16 @@
  */
 import React from "react";
 import partnershipGraphic from "../../images/partnershipGraphic.svg";
+import partnershipGraphicMobile from "../../images/partnershipGraphicMobile.svg";
+import partnershipStats from "../../images/partnershipStats.svg";
 
 function Partnership() {
   return (
     <section className="partnership">
-      <img src={partnershipGraphic} alt="" />
-      <div className="employer-stats">
+      <img src={partnershipGraphic} className="d-none d-md-block" alt="" />
+      <img src={partnershipGraphicMobile} className="d-block d-md-none" alt="" />
+      <img src={partnershipStats} className="d-block d-md-none mt-5" alt="" />
+      <div className="employer-stats d-none d-md-flex">
         <div className="stats-container">
           <span className="number">
             89%

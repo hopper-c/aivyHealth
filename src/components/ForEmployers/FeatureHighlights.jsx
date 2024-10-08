@@ -4,6 +4,9 @@
 import React from "react";
 import whatWeDo from "../../images/pharmWhatWeDo.svg";
 import checkMark from "../../images/blueCheck.svg";
+import wellnessUrgent from "../../images/wellness-urgent.svg";
+import boosterInject from "../../images/booster-inject.svg";
+import specialtyArc from "../../images/specialty-arc.svg";
 
 function FeatureHighlights() {
   const features = [
@@ -28,18 +31,21 @@ function FeatureHighlights() {
     {
       title: "Wellness and urgent care Infusions",
       class: "wellness",
+      image: wellnessUrgent,
       description:
         "Keep your team energized and healthy with on-demand IV infusions, whether it's a quick immunity boost or fast relief from the flu."
     },
     {
       title: "Booster Injections",
       class: "booster",
+      image: boosterInject,
       description:
         "Increase employee health with targeted injections like B12 for energy or NAD for mental clarity, delivered conveniently wherever they are."
     },
     {
       title: "Specialty Infusions",
       class: "infusions",
+      image: specialtyArc,
       description:
         "Employees have access to specialty infusions tailored to chronic condition management, ensuring they get same day care no matter their location."
     }
@@ -68,7 +74,8 @@ function FeatureHighlights() {
           <div key={index} className={service.class}>
             <div className="vector"></div>
             <div className="serviceContainer">
-              <h3 className="serviceHeader">{service.title}</h3>
+              <img src={service.image} />
+              <h3 className="serviceHeader d-none d-md-block">{service.title}</h3>
               <p className="serviceDescription">
                 {service.description}
               </p>

@@ -1397,15 +1397,17 @@ summary::-webkit-details-marker {
         padding: 20px 0 !important;
 
         .x-result {
-            font-size: 20px !important;
+            font-size: 32px !important;
         }
 
         .result-text {
-            font-size: 16px !important;
+            font-size: 14px !important;
         }
 
         .results {
-            padding: 0 25px;
+            padding: 0;
+
+            gap: 25px;
         }
     }
 
@@ -1456,6 +1458,8 @@ summary::-webkit-details-marker {
             font-size: 20px !important;
         }
 
+        align-items: center;
+
         .wellness {
             background-color: #2F7089 !important;
         }
@@ -1474,6 +1478,10 @@ summary::-webkit-details-marker {
     .wellness, .booster, .infusions {
         max-width: 100%;
         color: white;
+
+        border-radius: 100% !important;
+        height: 350px;
+        width: 350px !important;
     }
 
     .featureGrid {

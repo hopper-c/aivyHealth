@@ -11,6 +11,7 @@ import Partnership from "./Partnership.jsx";
 import ScheduleConsultation from "./ScheduleConsultation.jsx";
 import Testimonial from "./Testimonial.jsx";
 import Roi from "./Roi.jsx"
+import DemoRequest from "../ForPharmacies/DemoRequest.jsx";
 
 function PreLaunchHomePage() {
   return (
@@ -19,9 +20,16 @@ function PreLaunchHomePage() {
         <IntroSection />
         <FeatureHighlights />
         <Partnership />
-        <Testimonial/>
+        <div className="d-none d-md-block">
+          <Testimonial/>
+        </div>
         <Roi/>
-        <ScheduleConsultation />
+        <div className="d-none d-md-block">
+          <ScheduleConsultation />
+        </div>
+        <div className="d-block d-md-none">
+          <DemoRequest />
+        </div>
       <Footer />
     </div>
   );

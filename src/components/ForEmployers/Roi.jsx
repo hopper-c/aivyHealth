@@ -95,7 +95,7 @@ function Roi() {
       </section>
       <section className="annual-savings-container">
         <h3>Your annual savings</h3>
-        <div className="results">
+        <div className="results flex-column flex-md-row">
           <div className="column-1">
             <span className="x-result" id="medical-savings">
               xxxxxx
