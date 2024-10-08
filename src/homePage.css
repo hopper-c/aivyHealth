@@ -856,18 +856,6 @@ h1, h2, h3, p {
     position: relative;
     display: flex;
     text-align: left;
-}
-
-.faqQuestion {
-    font-size: 14px;
-
-    @media (max-width: 991px) {
-        &::after {
-            width: 18px !important;
-            height: 16px !important;
-            background-image: url('./images/expand-cross-mobile.svg') !important;
-        }
-    }
 
     &::after {
         content: "";
@@ -882,7 +870,17 @@ h1, h2, h3, p {
         font-size: 30px;
         color: #2f7089;
     }
+
+    @media (max-width: 991px) {
+        font-size: 14px;
+        &::after {
+            background-image: url('./images/expand-cross-mobile.svg') !important;
+            width: 18px !important;
+            height: 16px !important;
+        }
+    }
 }
+
 
 /* .faqItem[open] .faqQuestion::after {
     content: "-";
