@@ -10,6 +10,8 @@
     .whatWeDoImg {
         @media (max-width: 991px) {
             display: none;
+            width: 100vw;
+            margin-left: -25px;
         }
     }
 }
@@ -21,6 +23,10 @@
     span {
         font-size: 20px;
         max-width: 300px;
+
+        @media (max-width: 991px) {
+            font-size: 14px;
+        }
     }
 
     img {
@@ -38,6 +44,7 @@
         position: relative;
         right: unset;
         top: unset;
+        margin-top: 40px;
     }
 
     ul {
@@ -46,6 +53,13 @@
 
     h2 {
         font-size: 46px;
+
+        @media (max-width: 991px) {
+            font-size: 32px;
+            margin-left: -25px;
+            text-align: center;
+            margin-bottom: 12px;
+        }
     }
 }
 

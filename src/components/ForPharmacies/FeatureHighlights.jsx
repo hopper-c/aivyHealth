@@ -4,6 +4,7 @@
 import React from "react";
 import whatWeDo from "../../images/pharmWhatWeDo.svg";
 import checkMark from "../../images/blueCheck.svg";
+import pharmTalking from "../../images/pharm-talking.svg";
 
 function FeatureHighlights() {
   const features = [
@@ -68,6 +69,7 @@ function FeatureHighlights() {
         ))}
       </div>
       <div className="whatWeDo">
+        <img className="whatWeDoImg d-block d-md-none" src={pharmTalking} alt="" />
         <div className="checkListContainer">
           <h2>What we do for you</h2>
           <ul>

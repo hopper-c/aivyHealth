@@ -273,6 +273,11 @@ h1, h2, h3, p {
 .introImage {
     max-width: 570px;
     border-radius: 22px;
+
+    @media (max-width: 991px) {
+        border-radius: unset;
+        width: 100vw;
+    }
 }
 
 .caseStudySection {

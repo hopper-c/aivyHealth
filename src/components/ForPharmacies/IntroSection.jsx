@@ -3,6 +3,7 @@
  */
 import React from "react";
 import forPatientsImg from "../../images/forPatientsIntroImg.svg"
+import forPatientsImgMobile from "../../images/intro-mobile-pharmacie.svg"
 
 function IntroSection() {
   return (
@@ -21,7 +22,12 @@ function IntroSection() {
       <img
         src={forPatientsImg}
         alt="Infusion therapy illustration"
-        className="introImage"
+        className="introImage d-none d-md-block"
+      />
+      <img
+        src={forPatientsImgMobile}
+        alt="Infusion therapy illustration"
+        className="introImage d-block d-md-none"
       />
     </section>
   );
