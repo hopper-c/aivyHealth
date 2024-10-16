@@ -17,7 +17,6 @@ function HRForm() {
     const handleSubmit = (e) => {
       e.preventDefault();
   
-      // Construct mailto link
       const subject = encodeURIComponent("HR/Operations Manager Inquiry");
       const body = encodeURIComponent(
         `Contact Email: ${formData.contactEmail}\n` +
@@ -27,8 +26,7 @@ function HRForm() {
       );
   
       const mailtoLink = `mailto:example@aivyhealth.com?subject=${subject}&body=${body}`;
-      
-      // Open mail client with prefilled info
+
       window.location.href = mailtoLink;
     };
   
@@ -91,11 +89,11 @@ function HRForm() {
   }  
 
 function EmployersCover() {
-  const [showHRForm, setShowHRForm] = useState(false); // State to toggle HRForm
+  const [showHRForm, setShowHRForm] = useState(false);
 
   const handleSearchSubmit = (e) => {
     e.preventDefault();
-    setShowHRForm(true); // Show HRForm when form is submitted
+    setShowHRForm(true);
   };
 
   return (
@@ -133,8 +131,6 @@ function EmployersCover() {
           </div>
         </div>
       </div>
-
-      {/* Render HRForm below EmployersCover */}
       {showHRForm && <HRForm />}
     </section>
   );

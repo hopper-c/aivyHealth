@@ -4,13 +4,11 @@ import '../../hamburgerMenu.css';
 const HamburgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  // Toggle the menu open/close
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
   return (
-    // <nav className="navbar">
     <div className='hamburgerContainer'>
       <div className={`menu-icon ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
         <div className="line1"></div>
@@ -21,10 +19,8 @@ const HamburgerMenu = () => {
         <li><a href="/">For Patients</a></li>
         <li><a href="/pharmacies">For Pharmacies</a></li>
         <li><a href="/employers">For Employers</a></li>
-        {/* <li><a href="/contact">For Providers</a></li> */}
       </ul>
     </div>
-    // </nav>
   );
 };
 

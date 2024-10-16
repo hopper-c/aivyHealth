@@ -20,9 +20,7 @@ function DemoRequest() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const mailtoLink = `mailto:demo@example.com?subject=${encodeURIComponent(
-      formData.subject
-    )}&body=${encodeURIComponent(
+    const mailtoLink = `mailto:demo@example.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(
       `Name: ${formData.firstName} ${formData.lastName}\nEmail: ${formData.email}\nPhone: ${formData.phone}\n\nMessage: ${formData.message}`
     )}`;
 
