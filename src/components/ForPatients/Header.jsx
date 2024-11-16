@@ -30,11 +30,6 @@ function Header() {
               For Pharmacies
             </a>
           </li>
-          <li>
-            <a href="/employers" className="navLink">
-              For Employers
-            </a>
-          </li>
         </ul>
         <img
           src={aivyTextLogo}
