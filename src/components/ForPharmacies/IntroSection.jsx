@@ -13,7 +13,7 @@ function IntroSection() {
           We handle your staffing and logistics to deliver timely, high-quality infusions directly to patients' homes.
         </p>
         <div className="introCta">
-          <a className="joinWaitlistButton" href="https://docs.google.com/forms/d/e/1FAIpQLSfN2KYoAu1_UTwnemUDbIgfh20xzRCfo_SbkRA_kZ_Zeb3vsw/viewform" target="_blank">Get Started Today</a>
+          <a className="joinWaitlistButton" href="https://docs.google.com/forms/d/e/1FAIpQLSfN2KYoAu1_UTwnemUDbIgfh20xzRCfo_SbkRA_kZ_Zeb3vsw/viewform" target="_blank" rel="noreferrer">Get Started Today</a>
         </div>
       </div>
       <img
