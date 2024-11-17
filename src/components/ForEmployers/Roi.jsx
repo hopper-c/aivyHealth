@@ -40,7 +40,7 @@ function Roi() {
       var equivalents = (employeesValue * 12) / 2080;
       medicalSavingsEle.innerHTML = '$' + medicalSavings;
       equivalentsEle.innerHTML = Math.round(equivalents);
-      productivityEle.innerHTML = productivity + ' ' + 'hrs';
+      productivityEle.innerHTML = productivity + ' hrs';
     }
   };
 

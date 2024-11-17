@@ -69,7 +69,7 @@ function FeatureHighlights() {
           <div key={index} className={service.class}>
             <div className="vector"></div>
             <div className="serviceContainer">
-              <img src={service.image} />
+              <img src={service.image} alt="service image" />
               <h3 className="serviceHeader d-none d-md-block">{service.title}</h3>
               <p className="serviceDescription">
                 {service.description}
