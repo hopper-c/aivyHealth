@@ -110,7 +110,7 @@ function DemoRequest() {
     <section className="demo-request d-flex d-md-none">
       <h2 className="contactTitle">Get a demo</h2>
       <span className="contact-body">Explore more ways we can help you save time and increase profits.</span>
-      <a className="joinButton" onClick={handleClick} target="_blank" rel="noreferrer">Contact Us</a>
+      <button className="joinButton" onClick={handleClick} target="_blank" rel="noreferrer">Contact Us</button>
     </section>
   </>
   );
