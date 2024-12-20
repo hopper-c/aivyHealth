@@ -58,7 +58,7 @@ function Footer() {
                 </li>
               </ul>
               <h4 className="footerNavTitle">Follow Us</h4>
-              <a href="https://www.instagram.com/aivyhealth/" target="_blank">
+              <a href="https://www.instagram.com/aivyhealth/" target="_blank" rel="noreferrer">
                 <img
                   src={instagramLogo}
                   alt="Instagram Logo"

@@ -26,7 +26,7 @@ function WaitlistSection() {
             className="emailInput"
             aria-label="Enter your email address"
           />
-          <a className="submitButton" href="https://docs.google.com/forms/d/e/1FAIpQLSfN2KYoAu1_UTwnemUDbIgfh20xzRCfo_SbkRA_kZ_Zeb3vsw/viewform" target="_blank">
+          <a className="submitButton" href="https://docs.google.com/forms/d/e/1FAIpQLSfN2KYoAu1_UTwnemUDbIgfh20xzRCfo_SbkRA_kZ_Zeb3vsw/viewform" target="_blank" rel="noreferrer">
             Send
           </a>
         </form>

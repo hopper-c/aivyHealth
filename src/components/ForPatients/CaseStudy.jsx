@@ -11,7 +11,7 @@ import convenience from "../../images/convenience.svg";
 import trusted from "../../images/trusted.svg";
 import piggyBank from "../../images/piggy-bank.svg";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination } from 'swiper/modules';
+import { Navigation } from 'swiper/modules';
 
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';

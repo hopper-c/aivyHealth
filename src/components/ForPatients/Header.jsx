@@ -15,7 +15,7 @@ function Header() {
         className="logo d-block d-md-none"
       />
       <div className="topMenu">
-        <a className="joinButton" href="https://docs.google.com/forms/d/e/1FAIpQLSfN2KYoAu1_UTwnemUDbIgfh20xzRCfo_SbkRA_kZ_Zeb3vsw/viewform" target="_blank">Join the waitlist</a>
+        <a className="joinButton" href="https://docs.google.com/forms/d/e/1FAIpQLSfN2KYoAu1_UTwnemUDbIgfh20xzRCfo_SbkRA_kZ_Zeb3vsw/viewform" target="_blank" rel="noreferrer">Join the waitlist</a>
       </div>
       <HamburgerMenu />
       <nav className="mainNav">

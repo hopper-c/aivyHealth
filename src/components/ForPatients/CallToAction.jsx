@@ -22,7 +22,7 @@ function CallToAction() {
       </div>
       <div className="flexRow">
         <div className="ctaButtons">
-          <a className="waitlist" href="https://docs.google.com/forms/d/e/1FAIpQLSfN2KYoAu1_UTwnemUDbIgfh20xzRCfo_SbkRA_kZ_Zeb3vsw/viewform" target="_blank">
+          <a className="waitlist" href="https://docs.google.com/forms/d/e/1FAIpQLSfN2KYoAu1_UTwnemUDbIgfh20xzRCfo_SbkRA_kZ_Zeb3vsw/viewform" target="_blank" rel="noreferrer">
             Join the waitlist
           </a>
           <button className="contactUs" onClick={handleClick}>Contact us</button>
